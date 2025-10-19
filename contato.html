@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contato - OnlyFronts</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul class="ul-nav">
+                <li class="li-nav">
+                    <a href="index.html">
+                        <h1>Devroute</h1>
+                    </a>
+                </li class="li-nav">
+                <li class="li-nav"><input type="text" placeholder="Pesquisar"></li>
+                <li class="li-nav"><a href="index.html">
+                        <h4>Home</h4>
+                    </a></li>
+                <li class="li-nav"><a href="quiz.html">
+                        <h4>Quiz</h4>
+                    </a></li>
+                <li class="li-nav"><a href="curso.html">
+                        <h4>Cursos</h4>
+                    </a></li>
+                <li class="li-nav"><a href="trilha.html">
+                        <h4>Trilha</h4>
+                    </a></li>
+                <li class="li-nav"><a href="perfil.html">
+                        <h4>Perfil</h4>
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Entre em Contato</h1>
+        <hr />
+
+        <h2>Informações da Empresa</h2>
+        <p><strong>OnlyFronts - Educação em TI</strong></p>
+        <p>
+            Sua jornada para o primeiro emprego em tecnologia começa
+            aqui!
+        </p>
+        <br />
+
+        <p>
+            <strong>Endereço:</strong> Rua Maria Veltri, 254 - Vila
+            Talarico, São Paulo - SP, CEP: 03534-020
+        </p>
+        <p><strong>E-mail:</strong> contato@onlyfronts.com.br</p>
+        <p><strong>Telefone:</strong> (11) 3456-7890</p>
+        <p><strong>WhatsApp:</strong> (11) 98765-4321</p>
+        <p>
+            <strong>Horário de Atendimento:</strong> Segunda a Sexta,
+            das 9h às 18h
+        </p>
+
+        <br /><br />
+
+        <h2>Formulário de Contato</h2>
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <td><label for="nome">Nome Completo:</label></td>
+                    <td><input type="text" size="40" /></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail:</label></td>
+                    <td>
+                        <input type="email" id="email" name="email" size="40" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="telefone">Telefone:</label></td>
+                    <td>
+                        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" placeholder="11987654321"
+                            required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="data">Data de Nascimento:</label>
+                    </td>
+                    <td>
+                        <input type="date" id="data" name="data" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="idade">Idade:</label></td>
+                    <td>
+                        <input type="number" id="idade" name="idade" min="14" max="100" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="assunto">Assunto:</label></td>
+                    <td>
+                        <select id="assunto" name="assunto" required>
+                            <option value="">Selecione...</option>
+                            <option value="cursos">
+                                Informações sobre Cursos
+                            </option>
+                            <option value="trilhas">
+                                Trilhas de Aprendizado
+                            </option>
+                            <option value="suporte">
+                                Suporte Técnico
+                            </option>
+                            <option value="parceria">Parcerias</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="mensagem">Mensagem:</label></td>
+                    <td>
+                        <textarea id="mensagem" name="mensagem" rows="6" cols="38" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <br />
+                        <input type="submit" value="Enviar Mensagem" />
+                        <input type="reset" value="Limpar Formulário" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <br /><br />
+
+        <h2>Equipe Responsável</h2>
+        <hr />
+
+        <h3>Membros do Grupo</h3>
+        <table border="1" cellpadding="10" cellspacing="5">
+            <tr>
+                <th>Nome</th>
+                <th>RGM</th>
+                <th>E-mail</th>
+            </tr>
+            <tr>
+                <td>João Guilherme da Silva</td>
+                <td>45670455</td>
+                <td>joaobrito007@cs.unicid.edu.br</td>
+            </tr>
+            <tr>
+                <td>Daniel Quintiliano trindade</td>
+                <td>45604762</td>
+                <td>d.trindade@cs.unicid.edu.br</td>
+            </tr>
+            <tr>
+                <td>Arthur Rodrigues Dantas</td>
+                <td>45564914</td>
+                <td>arthur.dantas006@cs.unicid.edu.br</td>
+            </tr>
+            <tr>
+                <td>Pedro Henrique Siqueira Alves</td>
+                <td>45839531</td>
+                <td>Pedrosiqueira943@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Victor Silva Araujo</td>
+                <td>45242666</td>
+                <td>victorsilva.vsaraujo@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Heberty Silva Morais</td>
+                <td>45653950</td>
+                <td>Heberty.morais@cs.unicid.edu.br</td>
+            </tr>
+            <tr>
+                <td>Daniel Menezes</td>
+                <td>44898215</td>
+                <td>daniel.menezes005@cs.unicid.edu.br</td>
+            </tr>
+            <tr>
+                <td>Pedro Straub Mantoan</td>
+                <td>45598185</td>
+                <td>pedro.mantoan@cs.unicid.edu.br</td>
+            </tr>
+            <tr>
+                <td>Jorge Aldhair Armas Aguilar</td>
+                <td>45739498</td>
+                <td>jorge.aguilar@cs.unicid.edu.br</td>
+            </tr>
+            <tr>
+                <td>William Ferreira Ferro</td>
+                <td>44665245</td>
+                <td>william.ferro@cs.unicid.edu.br</td>
+            </tr>
+        </table>
+
+        <br /><br />
+
+        <h3>Sobre Nossa Missão</h3>
+        <p>
+            A <strong>OnlyFronts</strong> é uma plataforma dedicada a
+            fornecer trilhas de aprendizado e cursos especializados na
+            área de Tecnologia da Informação. Nossa missão é ajudar
+            iniciantes a conquistarem seu primeiro emprego na área de
+            TI, oferecendo conteúdo de qualidade, projetos práticos e
+            mentoria especializada.
+        </p>
+        <p>
+            Oferecemos cursos em diversas áreas: Desenvolvimento Web,
+            Programação, Design, Banco de Dados, DevOps e muito mais.
+            Junte-se a nós e transforme sua carreira!
+        </p>
+    </main>
+
+    <br /><br />
+
+    <footer>
+        <hr />
+        <p>
+            &copy; 2025 <strong>OnlyFronts</strong> - Todos os direitos
+            reservados.
+        </p>
+        <p>Siga-nos nas redes sociais:</p>
+        <ul>
+            <li>
+                <a href="#"><img src="img/instagam.png" alt="Logo da rede social Instagram" width="45px" /></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/LinkedIn.png" alt="Logo da rede social LinkedIn" width="45px" /></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/youtube.png" alt="Logo da rede social Youtube" width="50px" /></a>
+            </li>
+        </ul>
+        <p>
+            <a href="#">Sobre</a> | <a href="contato.html">Contato</a> |
+            <a href="#">Ajuda</a>
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Meu perfil</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul class="ul-nav">
+                <li class="li-nav">
+                    <a href="index.html">
+                        <h1>Devroute</h1>
+                    </a>
+                </li class="li-nav">
+                <li class="li-nav"><input type="text" placeholder="Pesquisar"></li>
+                <li class="li-nav"><a href="index.html">
+                        <h4>Home</h4>
+                    </a></li>
+                <li class="li-nav"><a href="quiz.html">
+                        <h4>Quiz</h4>
+                    </a></li>
+                <li class="li-nav"><a href="curso.html">
+                        <h4>Cursos</h4>
+                    </a></li>
+                <li class="li-nav"><a href="trilha.html">
+                        <h4>Trilha</h4>
+                    </a></li>
+                <li class="li-nav"><a href="perfil.html">
+                        <h4>Perfil</h4>
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-perfil">
+        <section id="dados-pessoais">
+            <section id="foto-perfil">
+                <img src="img/perfil.png" alt="Sua foto de perfil" width="200px" />
+                <button>Editar foto de perfil</button>
+            </section>
+            <section id="dados-form">
+                <h2>Informações pessoais</h2>
+                <form action="dados-form">
+                    <label for="nome"><b>Nome</b></label>
+                    <br />
+                    <input type="text" placeholder="Digite seu nome" value="Arthur" />
+                    <br />
+                    <label for="sobrenome"><b>Sobrenome</b></label>
+                    <br />
+                    <input type="text" placeholder="Digite seu sobrenome" value="Rodrigues Dantas" />
+                    <br />
+                    <label for="email"><b>E-mail</b></label>
+                    <br />
+                    <input type="email" placeholder="Digite seu e-mail" value="arthur@email" />
+                    <br />
+                    <br />
+                    <input type="submit" value="Editar dados pessoais" />
+                </form>
+            </section>
+            <section id="redes-sociais">
+                <h3>Redes sociais</h3>
+                <ul>
+                    <li>
+                        <a href="#"><img src="img/instagam.png" alt="Logo da rede social Instagram" width="35px" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/LinkedIn.png" alt="Logo da rede social LinkedIn" width="35px" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/github.png" alt="Logo da rede social GitHub" width="35px" /></a>
+                    </li>
+                </ul>
+            </section>
+            <section id="meus-cursos">
+                <h2>Meus cursos</h2>
+                <article class="curso">
+                    <h3>Curso de Front-end</h3>
+                    <progress value="45" max="100"></progress>
+                    <p>Progresso: 45%</p>
+                    <button>Continuar curso</button>
+                </article>
+                <article class="curso">
+                    <h3>Curso de Back-end</h3>
+                    <progress value="85" max="100"></progress>
+                    <p>Progresso: 85%</p>
+                    <button>Continuar curso</button>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; 2025 <strong>OnlyFronts</strong> - Todos os direitos
+            reservados.
+        </p>
+        <p>Siga-nos nas redes sociais:</p>
+        <ul>
+            <li>
+                <a href="#"><img src="img/instagam.png" alt="Logo da rede social Instagram" width="45px" /></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/LinkedIn.png" alt="Logo da rede social LinkedIn" width="45px" /></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/youtube.png" alt="Logo da rede social Youtube" width="50px" /></a>
+            </li>
+        </ul>
+        <p>
+            <a href="#">Sobre</a> | <a href="contato.html">Contato</a> |
+            <a href="#">Ajuda</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
