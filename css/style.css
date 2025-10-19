@@ -78,6 +78,7 @@
     list-style: none;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 #redes-sociais li{
@@ -97,5 +98,44 @@
     text-align: center;
     margin-top: 10px;
 }
+
+#rodape{
+    display: flex;
+    align-items: center;
+    height: 210px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#rodape a{
+    text-decoration: none;
+    color: gray;
+}
+
+#rodape ul{
+    list-style: none;
+}
+
+#rodape li{
+    margin: 5px;
+}
+
+#rodape h4{
+    margin-left: 5px;
+}
+
+.icons-redes{
+    display: flex;
+    align-items: center;
+}
+
+.icons-redes img{
+    width: 25px;
+}
+
+.rodape-coluna h1,ul,p{
+    margin-top: 10px;
+}
+
 
 
