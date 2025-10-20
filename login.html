@@ -1,13 +1,15 @@
 <html lang="pt-b">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/style.css">
-        <title>Login</title>
-    </head>
-    <body>
-        <header>
-            <nav class="nav-bar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
             <ul class="ul-nav">
                 <li class="li-nav">
                     <a href="index.html">
@@ -32,42 +34,40 @@
                     </a></li>
             </ul>
         </nav>
-        </header>
-        
-            <main>
-                <h1>Acesso à Sua Conta</h1>
-                <p>Insira suas credenciais para continuar.</p>
+    </header>
+    <main>
+        <h1>Acesso à Sua Conta</h1>
+        <p>Insira suas credenciais para continuar.</p>
+        <form action="perfil.html" method="post">
+            <label for="email">Email ou Usuário:</label>
+            <input type="email" placeholder="seu@email.com" required />
 
-                <form action="perfil.html" method="post">
-                    <label for="email">Email ou Usuário:</label>
-                    <input type="email" placeholder="seu@email.com" required />
+            <br /><br />
 
-                    <br /><br />
+            <label for="senha">Senha:</label>
+            <input type="password" placeholder="********" required />
 
-                    <label for="senha">Senha:</label>
-                    <input type="password" placeholder="********" required />
+            <br /><br />
 
-                    <br /><br />
+            <label for="lembrar">Lembrar-me</label>
+            <input type="checkbox" />
 
-                    <label for="lembrar">Lembrar-me</label>
-                    <input type="checkbox" />
+            <br /><br />
 
-                    <br /><br />
+            <button type="submit">Entrar</button>
+        </form>
 
-                    <button type="submit">Entrar</button>
-                </form>
-
-                <aside>
-                    <p>
-                        <a href="">Esqueceu sua senha?</a>
-                    </p>
-                    <p>Não tem uma conta?</p>
-                    <p>
-                        <a href="">Cadastre-se</a>
-                    </p>
-                </aside>
-            </main>
-            <footer id="rodape">
+        <aside>
+            <p>
+                <a href="">Esqueceu sua senha?</a>
+            </p>
+            <p>Não tem uma conta?</p>
+            <p>
+                <a href="">Cadastre-se</a>
+            </p>
+        </aside>
+    </main>
+    <footer id="rodape">
         <section class="rodape-coluna">
             <h1>Devroute</h1>
             <ul class="icons-redes">
@@ -103,6 +103,7 @@
             </ul>
         </section>
     </footer>
-        
-    </body>
+
+</body>
+
 </html>
