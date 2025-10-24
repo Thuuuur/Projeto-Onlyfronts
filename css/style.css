@@ -32,7 +32,7 @@ body{
     justify-content: space-around;
     align-items: center;
     height: 60px;
-    box-shadow: 0px 1px 30px var(--fundo-secundario);
+    box-shadow: 0px 0px 10px var(--fundo-secundario);
     margin: 0;
     background-color: var(--fundo-secundario);
 }
@@ -56,6 +56,13 @@ body{
 
 /* CSS perfil */
 
+.body-perfil{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 .main-perfil{
     margin-top: 20px;
     display: flex;
@@ -68,8 +75,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
     border-radius: 10px;
-    height: auto;
-    min-height: 400px;
+    min-height: 500px;
     width: 98.5%;
     background-color: var(--fundo-secundario);
 }
@@ -127,35 +133,38 @@ body{
 }
 
 /* CSS rodapé */
-#rodape{
+.rodape {
     display: flex;
     align-items: center;
-    min-height: 210px;
-    height: 100%;
+    width: 100%;
     justify-content: space-around;
-    flex-wrap: wrap;
     background-color: var(--fundo-secundario);
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
-#rodape a{
+.rodape-coluna{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.rodape a{
     text-decoration: none;
     color: var(--texto-suave);
 }
 
-#rodape a:hover{
+.rodape a:hover{
     text-decoration: underline;
 }
 
-#rodape ul{
+.rodape ul{
     list-style: none;
 }
 
-#rodape li{
+.rodape li{
     margin: 5px;
 }
 
-#rodape h4{
+.rodape h4{
     margin-left: 5px;
 }
 
@@ -167,18 +176,12 @@ body{
 .icons-redes img{
     width: 25px;
 }
-
-.rodape-coluna h1,ul,p{
-    margin-top: 10px;
-}
-
 /*CSS Index*/
 
 .descubra-area{
     background-color: var(--fundo-secundario);
-    border-radius: 10px;
     height: 400px;
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -188,7 +191,7 @@ body{
     display: flex;
     justify-content: center;
     background-color: var(--texto-suave);
-    border-radius: 10px;
+    border-radius: 10px 0px 0px 10px;
     width: 50%;
 }
 
@@ -239,3 +242,18 @@ body{
     color: white;
 }
 
+@media screen and (max-width: 500px) {
+    .rodape{
+        flex-direction: column;
+        height: auto;
+    }
+    .rodape-coluna{
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+    #dados-pessoais{
+        flex-direction: column;
+        height: auto;
+    }
+}
