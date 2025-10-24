@@ -1,20 +1,25 @@
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/style.css">
-        <title>Planos de Estudo - Pagamento</title>
-    </head>
-    <body>
-        
-            <header>
-                <nav class="nav-bar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Planos de Estudo - Pagamento</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <a href="index.html">
+                <h1 class="logo">Devroute</h1>
+            </a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
             <ul class="ul-nav">
-                <li class="li-nav">
-                    <a href="index.html">
-                        <h1>Devroute</h1>
-                    </a>
-                </li class="li-nav">
                 <li class="li-nav"><input type="text" placeholder="Pesquisar"></li>
                 <li class="li-nav"><a href="index.html">
                         <h4>Home</h4>
@@ -33,194 +38,135 @@
                     </a></li>
             </ul>
         </nav>
-                <h1>Nossos Planos</h1>
+        <h1>Nossos Planos</h1>
+    </header>
+
+    <main>
+        <section>
+            <header>
+                <h3>Plano Mensal.</h3>
+                <strong>R$ 29,90</strong> por mês
             </header>
+            <p>
+                <li>Acesso a todos os cursos e trilhas</li>
+                <li>Suporte da comunidade</li>
+                <li>Atividades práticas</li>
+                <li>Atualizações constantes</li>
+                <li>Quizes semanais</li>
+            </p>
+            <button>Selecionar</button>
+        </section>
 
-            <main>
-                <section>
-                    <header>
-                        <h3>Plano Mensal.</h3>
-                        <strong>R$ 29,90</strong> por mês
-                    </header>
-                    <p>
-                        <li>Acesso a todos os cursos e trilhas</li>
-                        <li>Suporte da comunidade</li>
-                        <li>Atividades práticas</li>
-                        <li>Atualizações constantes</li>
-                        <li>Quizes semanais</li>
-                    </p>
-                    <button>Selecionar</button>
-                </section>
+        <section>
+            <header>
+                <h3>Plano Trimestral</h3>
+                <strong>R$79,90</strong> por trimestre.
+            </header>
+            <p>
+                <li>Recomendação de vagas baseado no seu perfil</li>
+                <li>
+                    Suporte de profissionais ligado ao curso de escolha
+                </li>
+            </p>
+            <button>Selecionar</button>
+        </section>
 
-                <section>
-                    <header>
-                        <h3>Plano Trimestral</h3>
-                        <strong>R$79,90</strong> por trimestre.
-                    </header>
-                    <p>
-                        <li>Recomendação de vagas baseado no seu perfil</li>
-                        <li>
-                            Suporte de profissionais ligado ao curso de escolha
-                        </li>
-                    </p>
-                    <button>Selecionar</button>
-                </section>
+        <section>
+            <header>
+                <h3>Forma de Pagamento</h3>
+            </header>
+            <p>Escolha a forma de pagamento</p>
+            <p>
+                <input type="radio" id="cartao-credito" name="forma-pagamento" value="cartao-credito" required />
+                <label for="cartao-credito">Cartão de Crédito</label>
+            </p>
+            <p>
+                <input type="radio" id="cartao-debito" name="forma-pagamento" value="cartao-debito" required />
+                <label for="cartao-debito">Cartão de Débito</label>
+            </p>
+            <p>
+                <input type="radio" id="pix" name="forma-pagamento" value="pix" required />
+                <label for="pix">PIX</label>
+            </p>
+            <p>
+                <input type="radio" id="boleto" name="forma-pagamento" value="boleto" required />
+                <label for="boleto">Boleto Bancário</label>
+            </p>
+        </section>
 
-                <section>
-                    <header>
-                        <h3>Forma de Pagamento</h3>
-                    </header>
-                    <p>Escolha a forma de pagamento</p>
-                    <p>
-                        <input
-                            type="radio"
-                            id="cartao-credito"
-                            name="forma-pagamento"
-                            value="cartao-credito"
-                            required
-                        />
-                        <label for="cartao-credito">Cartão de Crédito</label>
-                    </p>
-                    <p>
-                        <input
-                            type="radio"
-                            id="cartao-debito"
-                            name="forma-pagamento"
-                            value="cartao-debito"
-                            required
-                        />
-                        <label for="cartao-debito">Cartão de Débito</label>
-                    </p>
-                    <p>
-                        <input
-                            type="radio"
-                            id="pix"
-                            name="forma-pagamento"
-                            value="pix"
-                            required
-                        />
-                        <label for="pix">PIX</label>
-                    </p>
-                    <p>
-                        <input
-                            type="radio"
-                            id="boleto"
-                            name="forma-pagamento"
-                            value="boleto"
-                            required
-                        />
-                        <label for="boleto">Boleto Bancário</label>
-                    </p>
-                </section>
+        <section>
+            <p>
+                <em>Preencha se escolheu uma das opções "cartão"</em>
+            </p>
+            <p>
+                <label for="numero-cartao">Número do Cartão:</label>
+                <input type="text" id="numero-cartao" name="numero-cartao" autocomplete="cc-number" pattern="{16}"
+                    maxlength="16" />
+            </p>
+            <p>
+                <label for="nome-cartao">Nome no Cartão:</label>
+                <input type="text" id="nome-cartao" name="nome-cartao" autocomplete="cc-name" maxlength="100" />
+            </p>
+            <p>
+                <label for="validade-mes">Mês de Validade:</label>
+                <select id="validade-mes" name="validade-mes" autocomplete="cc-exp-month">
+                    <option value="">Mês</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
 
-                <section>
-                    <p>
-                        <em>Preencha se escolheu uma das opções "cartão"</em>
-                    </p>
-                    <p>
-                        <label for="numero-cartao">Número do Cartão:</label>
-                        <input
-                            type="text"
-                            id="numero-cartao"
-                            name="numero-cartao"
-                            autocomplete="cc-number"
-                            pattern="{16}"
-                            maxlength="16"
-                        />
-                    </p>
-                    <p>
-                        <label for="nome-cartao">Nome no Cartão:</label>
-                        <input
-                            type="text"
-                            id="nome-cartao"
-                            name="nome-cartao"
-                            autocomplete="cc-name"
-                            maxlength="100"
-                        />
-                    </p>
-                    <p>
-                        <label for="validade-mes">Mês de Validade:</label>
-                        <select
-                            id="validade-mes"
-                            name="validade-mes"
-                            autocomplete="cc-exp-month"
-                        >
-                            <option value="">Mês</option>
-                            <option value="01">01</option>
-                            <option value="02">02</option>
-                            <option value="03">03</option>
-                            <option value="04">04</option>
-                            <option value="05">05</option>
-                            <option value="06">06</option>
-                            <option value="07">07</option>
-                            <option value="08">08</option>
-                            <option value="09">09</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                        </select>
+                <label for="validade-ano">Ano de Validade:</label>
+                <select id="validade-ano" name="validade-ano" autocomplete="cc-exp-year">
+                    <option value="">Ano</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                </select>
+            </p>
+            <p>
+                <label for="cvv">Código de Segurança (CVV):</label>
+                <input type="text" id="cvv" name="cvv" autocomplete="cc-csc" pattern="{3}" maxlength="3" />
+            </p>
+        </section>
 
-                        <label for="validade-ano">Ano de Validade:</label>
-                        <select
-                            id="validade-ano"
-                            name="validade-ano"
-                            autocomplete="cc-exp-year"
-                        >
-                            <option value="">Ano</option>
-                            <option value="26">26</option>
-                            <option value="27">27</option>
-                            <option value="28">28</option>
-                            <option value="29">29</option>
-                            <option value="30">30</option>
-                            <option value="31">31</option>
-                            <option value="32">32</option>
-                            <option value="33">33</option>
-                            <option value="34">34</option>
-                            <option value="35">35</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label for="cvv">Código de Segurança (CVV):</label>
-                        <input
-                            type="text"
-                            id="cvv"
-                            name="cvv"
-                            autocomplete="cc-csc"
-                            pattern="{3}"
-                            maxlength="3"
-                        />
-                    </p>
-                </section>
+        <section>
+            <header>
+                <h3>Confirmação de Pagamento</h3>
+            </header>
+            <p>
+                <em>Termos e Condições</em>
+            </p>
 
-                <section>
-                    <header>
-                        <h3>Confirmação de Pagamento</h3>
-                    </header>
-                    <p>
-                        <em>Termos e Condições</em>
-                    </p>
-
-                    <nav>
-                        <input
-                            type="checkbox"
-                            id="aceite-termos"
-                            name="aceite-termos"
-                            required
-                        />
-                        <label for="aceite-termos"
-                            >Li e aceito os
-                            <a href="/termos-uso"> Termos de Uso </a> e a
-                            <a href="/politica-privacidade"
-                                >Política de Privacidade</a
-                            >
-                        </label>
-                    </nav>
-                    <p>
-                        <button>Finalzar</button>
-                    </p>
-                </section>
-            </main>
-            <footer class="rodape">
+            <nav>
+                <input type="checkbox" id="aceite-termos" name="aceite-termos" required />
+                <label for="aceite-termos">Li e aceito os
+                    <a href="/termos-uso"> Termos de Uso </a> e a
+                    <a href="/politica-privacidade">Política de Privacidade</a>
+                </label>
+            </nav>
+            <p>
+                <button>Finalzar</button>
+            </p>
+        </section>
+    </main>
+    <footer class="rodape">
         <section class="rodape-coluna">
             <h1>Devroute</h1>
             <ul class="icons-redes">
@@ -256,6 +202,7 @@
             </ul>
         </section>
     </footer>
-        
-    </body>
+    <script src="js/mobile-nav.js"></script>
+</body>
+
 </html>

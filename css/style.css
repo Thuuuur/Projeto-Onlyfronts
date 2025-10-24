@@ -305,8 +305,8 @@ body {
         position: absolute;
         top: 6vh;
         right: 0;
-        width: 50vw;
-        height: 92vh;
+        width: 100%;
+        height: 300px;
         background-color: var(--fundo-secundario);
         flex-direction: column;
         align-items: center;
