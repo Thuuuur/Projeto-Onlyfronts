@@ -304,7 +304,6 @@ body {
     .ul-nav {
         position: absolute;
         top: 6vh;
-        right: 0;
         width: 100%;
         height: 300px;
         background-color: var(--fundo-secundario);
@@ -312,7 +311,6 @@ body {
         align-items: center;
         justify-content: space-around;
         display: none;
-        z-index: 10;
     }
 
     .ul-nav.active {
@@ -331,6 +329,12 @@ body {
 
     .nav-bar input {
         width: 200px;
+    }
+    .area-img{
+        display: none;
+    }
+    .descubra-area{
+        justify-content: center;
     }
 }
 
