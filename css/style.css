@@ -91,6 +91,40 @@ body {
     transform: translateX(0);
 }
 
+.perfil-dropdown-hover {
+    position: relative;
+}
+
+.dropdown-menu-hover {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: auto;
+    left: -65px;
+    background-color: var(--fundo-secundario);
+    border: 1px solid var(--fundo-secundario);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    z-index: 100; 
+    padding: 5px 0;
+    text-align: center;
+}
+
+.dropdown-menu-hover a {
+    color: #333;
+    padding: 8px 15px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown-menu-hover a:hover {
+    background-color: #f1f1f1;
+}
+
+.perfil-dropdown-hover:hover .dropdown-menu-hover {
+    display: block;
+}
 /* CSS perfil */
 .body-perfil {
     height: 100vh;
@@ -334,7 +368,6 @@ body {
     cursor: pointer;
 }
 
-
 /*  CSS - quiz */
 .questionario{
     display: grid;
@@ -361,7 +394,7 @@ body {
     background-color: var(--fundo-secundario);
     border-radius: 10px;
     text-align: left;
-    width: 800px;
+    width: 95%;
     padding: 30px;
 }
 
@@ -411,10 +444,11 @@ body {
     text-align: center;
 }
 
-main a{
+.main-login a{
     text-decoration: none;
     color: var(--cor-primaria);
 }
+
  .botao-login{
     height: 30px;
     width: 120px;
@@ -520,5 +554,16 @@ main a{
     .nav-bar input {
         width: 200px;
     }
+    .dropdown-menu-hover{
+        text-align: center;
+        width: 100%;
+        margin-top: 15px;
+        left: 0;
+    }
+    .perfil-dropdown-hover {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 }
 
