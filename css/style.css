@@ -334,42 +334,127 @@ body {
     cursor: pointer;
 }
 
+
+/*  CSS - quiz */
+.questionario{
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.titulo{
+    margin: 20px;
+}
+
+.subtitulo{
+    margin-bottom: 20px;
+}
+
+.perguntas{
+    margin-left: 20px;
+}
+
+.caixa-perguntas{
+    display: grid;
+    margin: 20px;
+    background-color: var(--fundo-secundario);
+    border-radius: 10px;
+    text-align: left;
+    width: 800px;
+    padding: 30px;
+}
+
+.todas-perguntas{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.botao-quiz{
+    height: 30px;
+    width: 120px;
+    border-radius: 20px;
+    border: 0;
+    background-color: var(--cor-primaria);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao-quiz:hover{
+      box-shadow: 0px 0px 5px #000000;
+}
+
+.direto-area{
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+
+
+/* CSS - Login*/
+
+.login-principal{
+    background-color: var(--fundo-secundario);
+    padding: 20px;  
+    width: 400px;
+    border-radius: 20px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.main-login{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+main a{
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+ .botao-login{
+    height: 30px;
+    width: 120px;
+    border-radius: 20px;
+    border: 0;
+    background-color: var(--cor-primaria);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+ }
+
+ .botao-login:hover{
+    box-shadow: 0px 0px 5px #000000;
+ }
+
+ .final-login{
+    margin: 20px;
+ }
+
+ .acesso-conta{
+    display: grid;
+    margin: 20px;
+    gap: 15px;
+ }
+
+ .checkbox{
+    width: 20px;
+ }
+
+.container-checkbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+}
+
 /*Responsividade do site*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     body {
         overflow-x: hidden;
-    }
-
-/*Navbar site*/
-    .ul-nav {
-        position: absolute;
-        top: 6vh;
-        width: 100%;
-        height: 300px;
-        background-color: var(--fundo-secundario);
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        display: none;
-        box-shadow: 0px 10px 10px var(--fundo-secundario);
-    }
-
-    .ul-nav.active {
-        display: flex;
-    }
-
-    .ul-nav li {
-        margin-left: 0;
-    }
-
-    .mobile-menu {
-        display: block;
-        cursor: pointer;
-        z-index: 20;
-    }
-
-    .nav-bar input {
-        width: 200px;
     }
 
 /*index*/    
@@ -401,5 +486,39 @@ body {
         height: auto;
     }
 
+}
+
+@media screen and (max-width: 900px){
+    /*Navbar site*/
+    .ul-nav {
+        position: absolute;
+        top: 6vh;
+        width: 100%;
+        height: 300px;
+        background-color: var(--fundo-secundario);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        display: none;
+        box-shadow: 0px 10px 10px var(--fundo-secundario);
+    }
+
+    .ul-nav.active {
+        display: flex;
+    }
+
+    .ul-nav li {
+        margin-left: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+        cursor: pointer;
+        z-index: 20;
+    }
+
+    .nav-bar input {
+        width: 200px;
+    }
 }
 

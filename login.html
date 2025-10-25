@@ -38,10 +38,13 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Acesso à Sua Conta</h1>
-        <p>Insira suas credenciais para continuar.</p>
-        <form action="perfil.html" method="post">
+    <main class="main-login">
+        <div class="acesso-conta">
+            <h1>Acesso à Sua Conta</h1>
+            <p>Insira suas credenciais para continuar.</p>
+        </div>
+
+        <form action="perfil.html" method="post" class="login-principal">
             <label for="email">Email ou Usuário:</label>
             <input type="email" placeholder="seu@email.com" required />
 
@@ -51,23 +54,21 @@
             <input type="password" placeholder="********" required />
 
             <br /><br />
-
-            <label for="lembrar">Lembrar-me</label>
-            <input type="checkbox" />
-
+            <div class="container-checkbox">
+            <label for="lembrar" class="lembrar-me">Lembrar-me</label>
+            <input type="checkbox" id="lembrar" class="checkbox">
+            </div>
             <br /><br />
 
-            <button type="submit">Entrar</button>
+            <button type="submit" class="botao-login">Entrar</button>
         </form>
 
-        <aside>
-            <p>
-                <a href="">Esqueceu sua senha?</a>
-            </p>
+        <aside class="final-login">
+            <p><a href="">Esqueceu sua senha?</a></p> 
+            <br>
             <p>Não tem uma conta?</p>
-            <p>
-                <a href="">Cadastre-se</a>
-            </p>
+            <br>
+            <p><a href="">Cadastre-se!</a></p>
         </aside>
     </main>
     <footer class="rodape">
