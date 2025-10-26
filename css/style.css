@@ -1,22 +1,25 @@
-/*Paleta de cores do site*/
+/*---------------Paleta de cores do site---------------*/
 :root {
     --cor-primaria: #0D47A1;
-    /* Azul Marinho */
+    /*---------------Azul Marinho---------------*/
     --cor-acao: #FF8C00;
-    /* Laranja Escuro */
+    /*---------------Laranja Escuro---------------*/
     --fundo-claro: #F8F9FA;
-    /* Fundo principal */
+    /*---------------Fundo principal---------------*/
     --fundo-secundario: #EAECEE;
-    /* Fundo de cards/seçõesEAECEE */
+    /*---------------Fundo de cards/seções---------------*/
     --texto-principal: #212529;
-    /* Preto/Cinza muito escuro */
+    /*---------------Preto/Cinza muito escuro---------------*/
     --texto-suave: #6C757D;
-    /* Cinza médio */
+    /*---------------Cinza médio---------------*/
     --sucesso: #28A745;
-    /* Verde */
+    /*---------------Verde---------------*/
     --erro: #DC3545;
-    /* Vermelho */
+    /*---------------Vermelho---------------*/
 }
+
+
+
 
 * {
     margin: 0;
@@ -29,7 +32,10 @@ body {
     color: var(--texto-principal);
 }
 
-/* CSS navbar */
+
+
+
+/*---------------CSS navbar---------------*/
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -125,7 +131,10 @@ body {
 .perfil-dropdown-hover:hover .dropdown-menu-hover {
     display: block;
 }
-/* CSS perfil */
+
+
+
+/*---------------CSS perfil---------------*/
 .body-perfil {
     height: 100vh;
     display: flex;
@@ -211,7 +220,9 @@ body {
     margin-top: 10px;
 }
 
-/* CSS rodapé */
+
+
+/*---------------CSS rodapé---------------*/
 .rodape {
     display: flex;
     align-items: center;
@@ -256,21 +267,24 @@ body {
     width: 25px;
 }
 
-/*CSS Index*/
+
+
+/*---------------CSS Index---------------*/
 .descubra-area {
     background-color: var(--fundo-secundario);
     height: 400px;
-    width: 100%;
+    width: 98.5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-radius: 10px;
 }
 
 .area-img {
     display: flex;
     justify-content: center;
     background-color: var(--texto-suave);
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px;
     width: 50%;
 }
 
@@ -283,7 +297,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .area-infos {
@@ -322,19 +336,21 @@ body {
 }
 
 .areas-populares{
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: var(--fundo-secundario);
-    width: 100%;
+    width: 98.5%;
     display: flex;
     flex-wrap: wrap;
     min-height: 300px;
     height: auto;
-    justify-content: center;
+    justify-content: space-around;
+    border-radius: 10px;
 }
 
 .areas-populares h2{
     text-align: center;
     width: 100%;
+    margin-top: 20px;
 }
 .card-areas{
     background-color: var(--fundo-claro);
@@ -342,7 +358,7 @@ body {
     border: 1px solid var(--texto-suave);
     height: 250px;
     width: 300px;
-    margin: 10px;
+    margin: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -368,7 +384,9 @@ body {
     cursor: pointer;
 }
 
-/*  CSS - quiz */
+
+
+/*---------------CSS Quiz---------------*/
 .questionario{
     display: grid;
     justify-items: center;
@@ -425,8 +443,8 @@ body {
 }
 
 
-/* CSS - Login*/
 
+/*---------------CSS Login---------------*/
 .login-principal{
     background-color: var(--fundo-secundario);
     padding: 20px;  
@@ -485,13 +503,129 @@ body {
     gap: 3px;
 }
 
-/*Responsividade do site*/
+
+
+/*---------------CSS Contato---------------*/
+.main-contato{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.container-contato{
+    background-color: var(--fundo-secundario);
+    border-radius: 10px;
+    width: 98.5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-contato h2{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container-contato div{
+    flex-grow: 1;
+}
+
+.card-form-contato form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.card-form-contato input, .card-form-contato textarea{
+    width: 300px;
+    margin-bottom:5px;
+    height: 30px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--texto-suave);
+}
+
+.card-infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.card-infos p{
+    margin: 10px;
+    align-items: center;
+}
+
+.container-missao-equipe{
+    display: flex;
+    width: 98.5%;
+    background-color: var(--fundo-secundario);
+    border-radius: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-missao-equipe h2{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container-missao-equipe h3{
+    margin-bottom: 10px;
+}
+
+.card-missao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-missao p{
+    width: 400px;
+    text-align: center;
+}
+
+.card-membros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-membros table{
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.card-membros th, .card-membros td{
+    padding: 5px;
+}
+
+
+/*---------------Responsividade do site---------------*/
 @media screen and (max-width: 600px) {
+
+
+
     body {
         overflow-x: hidden;
     }
 
-/*index*/    
+
+
+    /*---------------index---------------*/    
     .area-img{
         display: none;
     }
@@ -501,9 +635,14 @@ body {
 
     .nav-bar .logo {
     width: 200px;
-}
+    }
+    .card-areas{
+        margin: 20px;
+    }
 
-/*Rodapé*/
+
+
+    /*---------------Rodapé---------------*/
     .rodape {
         flex-direction: column;
         height: auto;
@@ -520,10 +659,31 @@ body {
         height: auto;
     }
 
+    .card-infos p,h2{
+    font-size: 14px;
+    }
+
+
+    /*---------------Contato---------------*/
+    .card-membros td,th{
+        font-size: 11px;
+        padding: 2px;
+        height: 30px;;
+    }
+    .card-missao p{
+    width: 300px;
+    text-align: center;
+    font-size: 14px;
+    }
 }
 
+
+
 @media screen and (max-width: 900px){
-    /*Navbar site*/
+
+
+
+    /*---------------Navbar site---------------*/
     .ul-nav {
         position: absolute;
         top: 6vh;
