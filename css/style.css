@@ -30,8 +30,11 @@
 body {
     background-color: var(--fundo-claro);
     color: var(--texto-principal);
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
-
 
 
 
@@ -135,13 +138,6 @@ body {
 
 
 /*---------------CSS perfil---------------*/
-.body-perfil {
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
 .main-perfil {
     margin-top: 10px;
     display: flex;
@@ -607,6 +603,7 @@ body {
 .card-membros table{
     border-collapse: collapse;
     text-align: center;
+    background-color: var(--fundo-claro);
 }
 
 .card-membros th, .card-membros td{
