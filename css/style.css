@@ -114,7 +114,7 @@ body {
     border: 1px solid var(--fundo-secundario);
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
     min-width: 150px;
-    z-index: 100; 
+    z-index: 100;
     padding: 5px 0;
     text-align: center;
 }
@@ -155,7 +155,8 @@ body {
     background-color: var(--fundo-secundario);
 }
 
-#dados-pessoais button,.editar-dados {
+#dados-pessoais button,
+.editar-dados {
     background-color: var(--cor-primaria);
     color: var(--fundo-claro);
     border-radius: 10px;
@@ -172,12 +173,13 @@ body {
     flex-direction: column;
 }
 
-#foto-perfil button,input {
+#foto-perfil button,
+input {
     height: 30px;
     width: 200px;
     font-weight: bold;
     border: 0;
-    
+
 }
 
 .editar-dados {
@@ -185,7 +187,7 @@ body {
     border-radius: 20px;
 }
 
-#foto-perfil button{
+#foto-perfil button {
     cursor: pointer;
     border-radius: 20px;
 }
@@ -225,13 +227,13 @@ body {
     text-align: center;
 }
 
-#meus-cursos progress{
+#meus-cursos progress {
     background-color: var(--fundo-claro);
     border-radius: 20px;
     height: 10px;
 }
 
-#meus-cursos button{
+#meus-cursos button {
     margin-top: 10px;
     height: 30px;
     width: 150px;
@@ -366,7 +368,7 @@ body {
     color: white;
 }
 
-.areas-populares{
+.areas-populares {
     margin-top: 10px;
     background-color: var(--fundo-secundario);
     width: 98.5%;
@@ -378,12 +380,13 @@ body {
     border-radius: 10px;
 }
 
-.areas-populares h2{
+.areas-populares h2 {
     text-align: center;
     width: 100%;
     margin-top: 20px;
 }
-.card-areas{
+
+.card-areas {
     background-color: var(--fundo-claro);
     border-radius: 10px;
     border: 1px solid var(--texto-suave);
@@ -397,13 +400,13 @@ body {
     text-align: center;
 }
 
-.card-areas img{
+.card-areas img {
     height: 150px;
     width: 300px;
     border-radius: 10px 10px 0px 0px;
 }
 
-.card-areas button{
+.card-areas button {
     margin-bottom: 10px;
     height: 30px;
     width: 200px;
@@ -416,42 +419,112 @@ body {
     margin-top: 10px;
 }
 
-.card-areas h3{
+.card-areas h3 {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.impact {
+    background-color: var(--fundo-secundario);
+}
+
+.payment-options {
+    background-color: var(--fundo-secundario);
+    width: 98.5%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.payment-options h2{
+    width: 100%;
+    text-align: center;
+    margin: 15px;
+}
+
+.payment-menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+/* Card basico */
+
+.payment-card-basic {
+    background-color: var(--fundo-claro);
+    transition: 200ms;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.payment-card-basic ul{
+    list-style: none;
+}
+.payment-card-basic li{
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+}
+.payment-card-basic li::before {
+    content: "✓";
+}
+.payment-card-basic:hover {
+    transform: translateY(-10px);
+}
+
+/* Card premium */
+.payment-card-premium {
+    background-color: var(--cor-primaria);
+    color: var(--fundo-claro);
+    padding: 10px;
+    border-radius: 10px;
+    transition: 200ms;
+}
+.payment-card-premium ul{
+    list-style: none;
+}
+.payment-card-premium li{
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+}
+.payment-card-premium li::before {
+    content: "✓";
+}
+.payment-card-premium:hover {
+    transform: translateY(-10px);
 }
 
 
 
 /*---------------CSS Quiz---------------*/
-.main-quiz{
+.main-quiz {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-.questionario{
+.questionario {
     display: grid;
     justify-items: center;
     text-align: center;
 }
 
-.titulo{
+.titulo {
     margin: 20px;
 }
 
-.subtitulo{
+.subtitulo {
     margin-bottom: 20px;
 }
 
-.perguntas{
+.perguntas {
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.caixa-perguntas{
+.caixa-perguntas {
     display: flex;
     background-color: var(--fundo-secundario);
     border-radius: 10px;
@@ -462,7 +535,7 @@ body {
     justify-content: space-around;
 }
 
-.todas-perguntas{
+.todas-perguntas {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -470,16 +543,16 @@ body {
     width: 100%;
 }
 
-.botao-quiz:hover{
-      box-shadow: 0px 0px 5px #000000;
+.botao-quiz:hover {
+    box-shadow: 0px 0px 5px #000000;
 }
 
-.direto-area a{
+.direto-area a {
     text-decoration: none;
     color: var(--cor-primaria);
 }
 
-.direto-area{
+.direto-area {
     text-align: center;
     height: 100px;
     display: flex;
@@ -488,7 +561,7 @@ body {
     align-items: center;
 }
 
-.direto-area button{
+.direto-area button {
     height: 30px;
     width: 120px;
     border-radius: 20px;
@@ -500,13 +573,13 @@ body {
 
 }
 
-.respostas{
+.respostas {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.respostas input{
+.respostas input {
     width: 15px;
     height: 15px;
     margin-left: 10px;
@@ -517,9 +590,9 @@ body {
 
 
 /*---------------CSS Login---------------*/
-.login-principal{
+.login-principal {
     background-color: var(--fundo-secundario);
-    padding: 20px;  
+    padding: 20px;
     width: 400px;
     border-radius: 20px;
     justify-content: center;
@@ -527,18 +600,19 @@ body {
     text-align: center;
 }
 
-.main-login{
+.main-login {
     display: grid;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
 
-.main-login a{
+.main-login a {
     text-decoration: none;
     color: var(--cor-primaria);
 }
- .botao-login{
+
+.botao-login {
     height: 30px;
     width: 120px;
     border-radius: 20px;
@@ -547,27 +621,27 @@ body {
     color: white;
     font-weight: bold;
     cursor: pointer;
- }
+}
 
- .botao-login:hover{
+.botao-login:hover {
     box-shadow: 0px 0px 5px #000000;
- }
+}
 
- .final-login{
+.final-login {
     margin: 20px;
- }
+}
 
- .acesso-conta{
+.acesso-conta {
     display: grid;
     margin: 20px;
     gap: 15px;
- }
+}
 
- .checkbox{
+.checkbox {
     width: 20px;
- }
+}
 
-.container-checkbox{
+.container-checkbox {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -577,7 +651,7 @@ body {
 
 
 /*---------------CSS Contato---------------*/
-.main-contato{
+.main-contato {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -585,40 +659,43 @@ body {
     margin-top: 10px;
 }
 
-.container-contato{
+.container-contato {
     background-color: var(--fundo-secundario);
     border-radius: 10px;
     width: 98.5%;
     display: flex;
     flex-wrap: wrap;
 }
-.container-contato h2{
+
+.container-contato h2 {
     width: 100%;
     text-align: center;
     margin-top: 20px;
 }
 
-.container-contato div{
+.container-contato div {
     flex-grow: 1;
 }
 
-.card-form-contato form{
+.card-form-contato form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 20px;
 }
-.card-form-contato input, .card-form-contato textarea{
+
+.card-form-contato input,
+.card-form-contato textarea {
     width: 300px;
-    margin-bottom:5px;
+    margin-bottom: 5px;
     height: 30px;
     padding-left: 5px;
     border-radius: 5px;
     border: 1px solid var(--texto-suave);
 }
 
-.card-infos{
+.card-infos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -628,12 +705,12 @@ body {
     text-align: center;
 }
 
-.card-infos p{
+.card-infos p {
     margin: 10px;
     align-items: center;
 }
 
-.container-missao-equipe{
+.container-missao-equipe {
     display: flex;
     width: 98.5%;
     background-color: var(--fundo-secundario);
@@ -644,17 +721,17 @@ body {
     justify-content: space-around;
 }
 
-.container-missao-equipe h2{
+.container-missao-equipe h2 {
     width: 100%;
     text-align: center;
     margin-top: 20px;
 }
 
-.container-missao-equipe h3{
+.container-missao-equipe h3 {
     margin-bottom: 10px;
 }
 
-.card-missao{
+.card-missao {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -662,12 +739,12 @@ body {
     margin-bottom: 20px;
 }
 
-.card-missao p{
+.card-missao p {
     width: 400px;
     text-align: center;
 }
 
-.card-membros{
+.card-membros {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -675,14 +752,66 @@ body {
     margin-bottom: 20px;
 }
 
-.card-membros table{
+.card-membros table {
     border-collapse: collapse;
     text-align: center;
     background-color: var(--fundo-claro);
 }
 
-.card-membros th, .card-membros td{
+.card-membros th,
+.card-membros td {
     padding: 5px;
+}
+
+
+
+/*--------------- CSS Métricas ---------------*/
+.api-info {
+    padding: 10px;
+    background-color: var(--fundo-secundario);
+}
+
+.metric-module {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.api-card {
+    background-color: var(--fundo-secundario);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+    flex: 22%;
+    align-content: space-between;
+    transition: all 500ms;
+
+}
+
+.api-button {
+    text-decoration: none;
+    background-color: var(--cor-primaria);
+    color: var(--fundo-secundario);
+    border: none;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.api-button:hover {
+    background-color: var(--cor-acao);
+}
+
+.api-listing {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.api-card:hover {
+    background-color: rgb(161, 199, 231);
+    transform: translateY(-5px);
+    transition: all 500ms;
 }
 
 
@@ -697,29 +826,32 @@ body {
 
 
 
-    /*---------------index---------------*/    
-    .area-img img{
+    /*---------------index---------------*/
+    .area-img img {
         height: 350px;
     }
-    .area-img{
+
+    .area-img {
         height: atuo;
         justify-content: center;
         align-items: end;
         display: flex;
     }
-    .descubra-area{
+
+    .descubra-area {
         justify-content: center;
         height: auto;
     }
 
-    .descubra-area button{
+    .descubra-area button {
         height: 30px;
     }
 
     .nav-bar .logo {
-    width: 200px;
+        width: 200px;
     }
-    .card-areas{
+
+    .card-areas {
         margin: 20px;
     }
 
@@ -742,27 +874,31 @@ body {
         height: auto;
     }
 
-    .card-infos p,h2{
-    font-size: 14px;
+    .card-infos p,
+    h2 {
+        font-size: 14px;
     }
 
 
     /*---------------Contato---------------*/
-    .card-membros td,th{
+    .card-membros td,
+    th {
         font-size: 11px;
         padding: 2px;
-        height: 30px;;
+        height: 30px;
+        ;
     }
-    .card-missao p{
-    width: 300px;
-    text-align: center;
-    font-size: 14px;
+
+    .card-missao p {
+        width: 300px;
+        text-align: center;
+        font-size: 14px;
     }
 
 
-    
+
     /*---------------Login---------------*/
-    .login-principal{
+    .login-principal {
         display: grid;
         justify-content: center;
         text-align: center;
@@ -770,11 +906,47 @@ body {
         margin: 10px;
         padding: 10px;
     }
+
+
+
+    /*--------------- Métricas ---------------*/
+    .api-info {
+        padding: 10px;
+        background-color: var(--erro);
+    }
+
+    .metric-module {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .api-card {
+        background-color: var(--fundo-secundario);
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .api-button {
+        text-decoration: none;
+        background-color: var(--cor-primaria);
+        color: var(--fundo-secundario);
+        border: none;
+        padding: 8px;
+        border-radius: 15px;
+        font-weight: bold;
+    }
+
+    .api-listing {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px) {
 
 
 
@@ -809,28 +981,30 @@ body {
     .nav-bar input {
         width: 200px;
     }
-    .dropdown-menu-hover{
+
+    .dropdown-menu-hover {
         text-align: center;
         width: 100%;
         margin-top: 15px;
         left: 0;
     }
+
     .perfil-dropdown-hover {
-    display: flex;
-    width: 100%;
-    justify-content: center;
+        display: flex;
+        width: 100%;
+        justify-content: center;
     }
 
 
 
-     /*---------------Quiz---------------*/
-    .todas-perguntas{
+    /*---------------Quiz---------------*/
+    .todas-perguntas {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    .caixa-perguntas{
+    .caixa-perguntas {
         display: grid;
         width: 98.5%;
         border-radius: 20px;
@@ -838,26 +1012,25 @@ body {
         height: auto;
     }
 
-    .perguntas{
+    .perguntas {
         margin-left: 20px;
         margin-top: 10px;
         margin-bottom: 5px;
     }
 
-    .respostas{
+    .respostas {
         margin-left: 20px;
         margin-top: 5px;
         margin-bottom: 10px;
     }
 
-     .respostas input{
+    .respostas input {
         margin-right: 10px;
         width: 10px;
         height: 16px;
     }
 
-    .botao-quiz{
+    .botao-quiz {
         margin-bottom: 10px;
     }
 }
-
