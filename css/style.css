@@ -815,6 +815,144 @@ input {
 }
 
 
+
+/*---------------CSS Pagamento---------------*/
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.plano{
+    margin-bottom: 20px;
+    background-color: var(--fundo-secundario);
+    border-radius: 10px;
+    width: 590px;
+}
+
+.secao {
+    margin-bottom: 20px;
+    background-color: var(--fundo-secundario);
+    border-radius: 10px;
+    width: 590px;
+}
+
+.plano h3 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.preco {
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+.plano ul {
+    margin: 15px 0;
+    padding-left: 10px;
+}
+
+.plano li {
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.plano li::before {
+    content: "✓";
+}
+
+.btn-plano {
+    background-color: var(--cor-primaria);
+    color: var(--fundo-claro);
+    padding: 5px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-plano:hover {
+    background-color: var(--cor-acao);
+}
+
+button:active {
+    transform: scale(0.80);
+}
+
+.secao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.secao div{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.secao h3 {
+    color: var(--cor-primaria);
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.secao p {
+    color: var(--texto-principal);
+    padding-left: 10px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.opcao {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opcao input {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin: 10px;
+}
+
+.campo {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--fundo-secundario);
+    margin-bottom: 10px;
+}
+.btn-enviar {
+    background-color: var(--cor-primaria);
+    color: var(--fundo-claro);
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 15px;
+    border-radius: 0px 0px 10px 10px;
+}
+.btn-enviar:hover {
+    background-color: var(--cor-acao);
+}
+
+
+
 /*---------------Responsividade do site---------------*/
 @media screen and (max-width: 600px) {
 
@@ -832,7 +970,7 @@ input {
     }
 
     .area-img {
-        height: atuo;
+        height: auto;
         justify-content: center;
         align-items: end;
         display: flex;
@@ -941,6 +1079,16 @@ input {
     .api-listing {
         display: flex;
         flex-direction: column;
+    }
+
+
+
+    /*---------------Pagamento---------------*/
+    .plano{
+        width: 98.5%;
+    }
+    .secao{
+        width: 98.5%;
     }
 }
 
