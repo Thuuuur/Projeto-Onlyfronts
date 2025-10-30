@@ -1,168 +1,269 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Inicio</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Inicio</title>
-</head>
-
-<body>
-    <header>
-        <nav class="nav-bar">
-            <a href="index.html">
-                <h1 class="logo">Devroute</h1>
-            </a>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <ul class="ul-nav">
-                <li class="li-nav"><input type="text" placeholder="Pesquisar"></li>
-                <li class="li-nav"><a href="index.html">
-                        <h4>Home</h4>
-                    </a></li>
-                <li class="li-nav"><a href="quiz.html">
-                        <h4>Quiz</h4>
-                    </a></li>
-                <li class="li-nav"><a href="curso.html">
-                        <h4>Cursos / Trilhas</h4>
-                    </a></li>
-                <li class="li-nav"><a href="areas-em-alta.html">
-                        <h4>🔥 Áreas em alta!</h4>
-                    </a></li>
-                <li class="li-nav perfil-dropdown-hover">
-                    <a href="perfil.html" class="perfil-link">
-                        <h4>Perfil</h4>
-                    </a>
-                    <div class="dropdown-menu-hover">
-                        <a href="login.html">Login</a>
-                        <a href="login.html">Cadastro</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main id="main-index">
-        <section class="descubra-area">
-            <div class="area-infos">
-                <h2>Descubra sua área ideal</h2>
-                <p>Responda nosso quiz, conheça suas habilidades e siga uma trilha personalizada rumo ao emprego dos
-                    seus
-                    sonhos.</p>
-                <a href="quiz.html"><button>Fazer o Quiz</button></a>
-            </div>
-            <div class="area-img">
-                <img src="img/pessoa.png" alt="pessoa com um livro de baixo do braço, olhando para frente">
-            </div>
-        </section>
-        <section class="areas-populares">
-            <h2>Áreas Populares</h2>
-            <article class="card-areas">
-                <img src="img/tecnologia.png" alt="">
-                <h3>Tecnologia</h3>
-                <p>Aprenda programação, desenvolvimento web e mais.</p>
-                <button>Ver Cursos / Trilhas</button>
-            </article>
-            <article class="card-areas">
-                <img src="img/design.png" alt="">
-                <h3>Design</h3>
-                <p>Explore o mundo da criação visual e da experiência do usuário.</p>
-                <button>Ver Cursos / Trilhas</button>
-            </article>
-            <article class="card-areas">
-                <img src="img/marketing.jpg" alt="">
-                <h3>Marketing</h3>
-                <p>Domine estratégias para impulsionar negócios.</p>
-                <button>Ver Cursos / Trilhas</button>
-            </article>
-        </section>
-        <section>
-            <h2>Depoimentos</h2>
-            <blockquote>
-                “Graças à plataforma, descobri meu talento em UX Design e hoje trabalho na área!”
-            </blockquote>
-            <p>— Ana M.</p>
-        </section>
-        <section class="impact">
-            <h2>Depoimentos</h2>
-            <blockquote>
-                “Graças à plataforma, descobri meu talento em UX Design e hoje trabalho na área!”
-            </blockquote>
-            <p>— Ana M.</p>
-            <h2>Nosso Impacto</h2>
-            <ul>
-                <li>+1.000 alunos matriculados</li>
-                <li>+200 cursos disponíveis</li>
-                <li>85% conseguiram estágio ou emprego</li>
-            </ul>
-        </section>
-        <section class="payment-options">
-            <h2>Planos e Preços</h2>
-            <div class="payment-menu">
-                <article class="payment-card-basic">
-                    <h3>Curso Individual</h3>
-                    <p>R$49,90 por curso</p>
-                    <ul class="benefits">
-                        <li>Acesso vitalício ao curso</li>
-                        <li>Material complementar</li>
-                        <li>Certificado de conclusão</li>
-                        <li>Suporte via email</li>
-                    </ul>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <a href="index.html">
+                    <h1 class="logo">Devroute</h1>
+                </a>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="ul-nav">
+                    <li class="li-nav">
+                        <input type="text" placeholder="Pesquisar" />
+                    </li>
+                    <li class="li-nav">
+                        <a href="index.html">
+                            <h4>Home</h4>
+                        </a>
+                    </li>
+                    <li class="li-nav">
+                        <a href="quiz.html">
+                            <h4>Quiz</h4>
+                        </a>
+                    </li>
+                    <li class="li-nav">
+                        <a href="curso.html">
+                            <h4>Cursos / Trilhas</h4>
+                        </a>
+                    </li>
+                    <li class="li-nav">
+                        <a href="areas-em-alta.html">
+                            <h4>🔥 Áreas em alta!</h4>
+                        </a>
+                    </li>
+                    <li class="li-nav perfil-dropdown-hover">
+                        <a href="perfil.html" class="perfil-link">
+                            <h4>Perfil</h4>
+                        </a>
+                        <div class="dropdown-menu-hover">
+                            <a href="login.html">Login</a>
+                            <a href="login.html">Cadastro</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main-index">
+            <section class="descubra-area">
+                <div class="area-infos">
+                    <h2>Descubra sua área ideal</h2>
+                    <p>
+                        Responda nosso quiz, conheça suas habilidades e siga uma
+                        trilha personalizada rumo ao emprego dos seus sonhos.
+                    </p>
+                    <a href="quiz.html"><button>Fazer o Quiz</button></a>
+                </div>
+                <div class="area-img">
+                    <img
+                        src="img/pessoa.png"
+                        alt="pessoa com um livro de baixo do braço, olhando para frente"
+                    />
+                </div>
+            </section>
+            <section class="areas-populares">
+                <h2>Áreas Populares</h2>
+                <article class="card-areas">
+                    <img src="img/tecnologia.png" alt="" />
+                    <h3>Tecnologia</h3>
+                    <p>Aprenda programação, desenvolvimento web e mais.</p>
+                    <button>Ver Cursos / Trilhas</button>
                 </article>
-
-                <article class="payment-card-premium">
-                    <h3>Pacote Completo</h3>
-                    <p>R$149,90 acesso total</p>
-                    <ul class="benefits">
-                        <li>Acesso vitalício ao curso</li>
-                        <li>Material complementar</li>
-                        <li>Certificado de conclusão</li>
-                        <li>Suporte via email</li>
-                    </ul>
+                <article class="card-areas">
+                    <img src="img/design.png" alt="" />
+                    <h3>Design</h3>
+                    <p>
+                        Explore o mundo da criação visual e da experiência do
+                        usuário.
+                    </p>
+                    <button>Ver Cursos / Trilhas</button>
                 </article>
-            </div>
-        </section>
-    </main>
-    <footer class="rodape">
-        <section class="rodape-coluna">
-            <h1>Devroute</h1>
-            <ul class="icons-redes">
-                <li>
-                    <a href="#"><img src="img/instagram.png" alt="Logo da rede social Instagram" width="45px" /></a>
-                </li>
-                <li>
-                    <a href="#"><img src="img/linkedin.png" alt="Logo da rede social LinkedIn" width="45px" /></a>
-                </li>
-                <li>
-                    <a href="#"><img src="img/github.png" alt="Logo da rede social GitHub" width="50px" /></a>
-                </li>
-            </ul>
-            <p>
-                &copy; 2025 <strong>OnlyFronts</strong> - Todos os direitos
-                reservados.
-            </p>
-        </section>
-        <section class="rodape-coluna">
-            <h4>Sobre Nós</h4>
-            <ul>
-                <li><a href="contato.html">Quem Somos</a></li>
-                <li><a href="contato.html">Fale Conosco</a></li>
-                <li><a href="contato.html">Trabalhe Conosco</a></li>
-            </ul>
-        </section>
-        <section class="rodape-coluna">
-            <h4>Ajuda e Suporte</h4>
-            <ul>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Termos de Uso</a></li>
-                <li><a href="#">Política de Privacidade</a></li>
-            </ul>
-        </section>
-    </footer>
-    <script src="js/mobile-nav.js"></script>
-</body>
+                <article class="card-areas">
+                    <img src="img/marketing.jpg" alt="" />
+                    <h3>Marketing</h3>
+                    <p>Domine estratégias para impulsionar negócios.</p>
+                    <button>Ver Cursos / Trilhas</button>
+                </article>
+            </section>
+            <section class="feedback-section">
+                <h2>Depoimentos</h2>
+                <div class="feedback-card-section">
+                    <article class="feedback-card">
+                        <div class="feedback-card-header">
+                            <img
+                                class="profile-pic"
+                                src="img/profiles/pedro.png"
+                                alt=""
+                            />
+                            <h4>Pedro H.</h4>
+                        </div>
+                        <blockquote>
+                            “O quiz me ajudou a descobrir minha paixão por
+                            desenvolvimento web. Os cursos são incríveis!”
+                        </blockquote>
+                    </article>
+                    <article class="feedback-card">
+                        <div class="feedback-card-header">
+                            <img
+                                class="profile-pic"
+                                src="img/profiles/arthur.png"
+                                alt=""
+                            />
+                            <h4>Arthur R.</h4>
+                        </div>
+                        <blockquote>
+                            “A trilha personalizada me guiou do zero até meu
+                            primeiro emprego na área de marketing digital.”
+                        </blockquote>
+                    </article>
+                    <article class="feedback-card">
+                        <div class="feedback-card-header">
+                            <img
+                                class="profile-pic"
+                                src="img/profiles/daniel.png"
+                                alt=""
+                            />
+                            <h4>Daniel T.</h4>
+                        </div>
+                        <blockquote>
+                            “Os instrutores são experientes e o conteúdo é
+                            atualizado. Recomendo muito!”
+                        </blockquote>
+                    </article>
+                    <article class="feedback-card">
+                        <div class="feedback-card-header">
+                            <img
+                                class="profile-pic"
+                                src="img/profiles/joao.png"
+                                alt=""
+                            />
+                            <h4>João H.</h4>
+                        </div>
+                        <blockquote>
+                            “Os instrutores são experientes e o conteúdo é
+                            atualizado. Recomendo muito!”
+                        </blockquote>
+                    </article>
+                    <article class="feedback-card">
+                        <div class="feedback-card-header">
+                            <img
+                                class="profile-pic"
+                                src="img/profiles/quintiliano.png"
+                                alt=""
+                            />
+                            <h4>Daniel Q.</h4>
+                        </div>
+                        <blockquote>
+                            “Graças à plataforma, descobri meu talento em UX
+                            Design e hoje trabalho na área!”
+                        </blockquote>
+                    </article>
+                </div>
+            </section>
+            <section class="impact-section">
+                <h2>Nosso Impacto</h2>
+                <ul>
+                    <li>+1.000 alunos matriculados</li>
+                    <li>+200 cursos disponíveis</li>
+                    <li>85% conseguiram estágio ou emprego</li>
+                </ul>
+            </section>
+            <section class="payment-section">
+                <h1>Planos e Preços</h1>
+                <div class="payment-menu">
+                    <article class="payment-card-basic">
+                        <h2>Curso Individual</h2>
+                        <p>Perfeito para começar</p>
+                        <p class="price-basic">R$49,90</p>
+                        <p>Pagamento único</p>
+                        <ul class="benefits">
+                            <li>Acesso vitalício ao curso</li>
+                            <li>Material complementar</li>
+                            <li>Certificado de conclusão</li>
+                            <li>Suporte via email</li>
+                        </ul>
+                        <button class="btn-basic">Escolher Curso</button>
+                    </article>
 
+                    <article class="payment-card-premium">
+                        <h2>Pacote Completo</h2>
+                        <p>Acesso ilimitado a tudo</p>
+                        <p class="price-premium">R$149,90</p>
+                        <p>Por mês</p>
+                        <ul class="benefits">
+                            <li>Acesso a todos os +200 cursos</li>
+                            <li>Novos cursos toda semana</li>
+                            <li>Certificados ilimitados</li>
+                            <li>Mentoria em grupo</li>
+                            <li>Comunidade exclusiva</li>
+                            <li>Suporte prioritário 24/7</li>
+                        </ul>
+                        <button class="btn-premium">Começar Agora</button>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class="rodape">
+            <section class="rodape-coluna">
+                <h1>Devroute</h1>
+                <ul class="icons-redes">
+                    <li>
+                        <a href="#"
+                            ><img
+                                src="img/instagram.png"
+                                alt="Logo da rede social Instagram"
+                                width="45px"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img
+                                src="img/linkedin.png"
+                                alt="Logo da rede social LinkedIn"
+                                width="45px"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img
+                                src="img/github.png"
+                                alt="Logo da rede social GitHub"
+                                width="50px"
+                        /></a>
+                    </li>
+                </ul>
+                <p>
+                    &copy; 2025 <strong>OnlyFronts</strong> - Todos os direitos
+                    reservados.
+                </p>
+            </section>
+            <section class="rodape-coluna">
+                <h4>Sobre Nós</h4>
+                <ul>
+                    <li><a href="contato.html">Quem Somos</a></li>
+                    <li><a href="contato.html">Fale Conosco</a></li>
+                    <li><a href="contato.html">Trabalhe Conosco</a></li>
+                </ul>
+            </section>
+            <section class="rodape-coluna">
+                <h4>Ajuda e Suporte</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </section>
+        </footer>
+        <script src="js/mobile-nav.js"></script>
+    </body>
 </html>

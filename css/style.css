@@ -1,25 +1,22 @@
 /*---------------Paleta de cores do site---------------*/
 :root {
-    --cor-primaria: #0D47A1;
+    --cor-primaria: #0d47a1;
     /*---------------Azul Marinho---------------*/
-    --cor-acao: #FF8C00;
+    --cor-acao: #ff8c00;
     /*---------------Laranja Escuro---------------*/
-    --fundo-claro: #F8F9FA;
+    --fundo-claro: #f8f9fa;
     /*---------------Fundo principal---------------*/
-    --fundo-secundario: #EAECEE;
+    --fundo-secundario: #eaecee;
     /*---------------Fundo de cards/seções---------------*/
     --texto-principal: #212529;
     /*---------------Preto/Cinza muito escuro---------------*/
-    --texto-suave: #6C757D;
+    --texto-suave: #6c757d;
     /*---------------Cinza médio---------------*/
-    --sucesso: #28A745;
+    --sucesso: #28a745;
     /*---------------Verde---------------*/
-    --erro: #DC3545;
+    --erro: #dc3545;
     /*---------------Vermelho---------------*/
 }
-
-
-
 
 * {
     margin: 0;
@@ -35,8 +32,6 @@ body {
     justify-content: space-between;
     flex-direction: column;
 }
-
-
 
 /*---------------CSS navbar---------------*/
 .nav-bar {
@@ -135,8 +130,6 @@ body {
     display: block;
 }
 
-
-
 /*---------------CSS perfil---------------*/
 .main-perfil {
     margin-top: 10px;
@@ -179,7 +172,6 @@ input {
     width: 200px;
     font-weight: bold;
     border: 0;
-
 }
 
 .editar-dados {
@@ -254,8 +246,6 @@ input {
     margin-top: 10px;
 }
 
-
-
 /*---------------CSS rodapé---------------*/
 .rodape {
     display: flex;
@@ -300,8 +290,6 @@ input {
 .icons-redes img {
     width: 25px;
 }
-
-
 
 /*---------------CSS Index---------------*/
 .descubra-area {
@@ -423,30 +411,109 @@ input {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
-.impact {
+/* Feedback */
+.feedback-section {
     background-color: var(--fundo-secundario);
+    width: 96.5%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}
+.feedback-section h2 {
+    margin-bottom: 10px;
 }
 
-.payment-options {
-    background-color: var(--fundo-secundario);
-    width: 98.5%;
-    border-radius: 10px;
+.feedback-card-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.payment-options h2{
+.feedback-card {
+    background-color: var(--fundo-claro);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    transition: 200ms;
+    flex-wrap: wrap;
+}
+.feedback-card:hover {
+    box-shadow: 0px 0px 10px var(--fundo-secundario);
+    transform: translateY(-5px);
+    background-color: var(--cor-primaria);
+    color: var(--fundo-claro);
+}
+.feedback-card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+.profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Impacto */
+.impact-section {
+    background-color: var(--fundo-secundario);
+    text-align: center;
+    width: 96.5%;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.impact-section ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.impact-section li {
+    font-size: 18px;
+    margin: 10px;
+    background-color: var(--fundo-claro);
+    padding: 15px;
+    border-radius: 20px;
+}
+.impact-section li::before {
+    content: "★ ";
+    color: var(--cor-primaria);
+}
+
+.payment-section {
+    background-color: var(--fundo-secundario);
+    width: 96.5%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.payment-sections h1 {
     width: 100%;
     text-align: center;
-    margin: 15px;
+    margin-bottom: 15px;
 }
 
 .payment-menu {
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
 }
 
 /* Card basico */
@@ -454,14 +521,18 @@ input {
 .payment-card-basic {
     background-color: var(--fundo-claro);
     transition: 200ms;
-    padding: 10px;
+    padding: 50px;
     border-radius: 10px;
+    text-align: center;
+}
+.payment-card-basic h2 {
+    text-align: left;
 }
 
-.payment-card-basic ul{
+.payment-card-basic ul {
     list-style: none;
 }
-.payment-card-basic li{
+.payment-card-basic li {
     border-bottom: 1px solid lightgray;
     padding: 10px;
 }
@@ -471,20 +542,42 @@ input {
 .payment-card-basic:hover {
     transform: translateY(-10px);
 }
+.price-basic {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: var(--cor-primaria);
+}
+.btn-basic {
+    margin-top: 15px;
+    padding: 10px 30px;
+    background-color: var(--cor-primaria);
+    color: var(--fundo-claro);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
 
 /* Card premium */
 .payment-card-premium {
+    background: #2a7b9b;
+    background: linear-gradient(
+        167deg,
+        rgba(42, 123, 155, 1) 0%,
+        rgba(152, 83, 237, 1) 100%
+    );
     background-color: var(--cor-primaria);
     color: var(--fundo-claro);
-    padding: 10px;
+    padding: 50px;
     border-radius: 10px;
     transition: 200ms;
+    text-align: center;
 }
-.payment-card-premium ul{
+.payment-card-premium ul {
     list-style: none;
 }
-.payment-card-premium li{
-    border-bottom: 1px solid lightgray;
+.payment-card-premium li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     padding: 10px;
 }
 .payment-card-premium li::before {
@@ -493,8 +586,24 @@ input {
 .payment-card-premium:hover {
     transform: translateY(-10px);
 }
+.price-premium {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.btn-premium {
+    margin-top: 15px;
+    padding: 10px 30px;
+    background-color: var(--fundo-claro);
+    color: var(--cor-primaria);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
 
-
+.benefits {
+    text-align: left;
+}
 
 /*---------------CSS Quiz---------------*/
 .main-quiz {
@@ -570,7 +679,6 @@ input {
     color: white;
     font-weight: bold;
     cursor: pointer;
-
 }
 
 .respostas {
@@ -585,9 +693,6 @@ input {
     margin-left: 10px;
     margin-right: 10px;
 }
-
-
-
 
 /*---------------CSS Login---------------*/
 .login-principal {
@@ -647,8 +752,6 @@ input {
     align-items: center;
     gap: 3px;
 }
-
-
 
 /*---------------CSS Contato---------------*/
 .main-contato {
@@ -763,8 +866,6 @@ input {
     padding: 5px;
 }
 
-
-
 /*--------------- CSS Métricas ---------------*/
 .api-info {
     padding: 10px;
@@ -785,7 +886,6 @@ input {
     flex: 22%;
     align-content: space-between;
     transition: all 500ms;
-
 }
 
 .api-button {
@@ -814,8 +914,6 @@ input {
     transition: all 500ms;
 }
 
-
-
 /*---------------CSS Pagamento---------------*/
 .container {
     display: flex;
@@ -824,7 +922,7 @@ input {
     justify-content: center;
 }
 
-.plano{
+.plano {
     margin-bottom: 20px;
     background-color: var(--fundo-secundario);
     border-radius: 10px;
@@ -881,17 +979,17 @@ input {
 }
 
 button:active {
-    transform: scale(0.80);
+    transform: scale(0.8);
 }
 
-.secao{
+.secao {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
 }
 
-.secao div{
+.secao div {
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -951,18 +1049,11 @@ label {
     background-color: var(--cor-acao);
 }
 
-
-
 /*---------------Responsividade do site---------------*/
 @media screen and (max-width: 600px) {
-
-
-
     body {
         overflow-x: hidden;
     }
-
-
 
     /*---------------index---------------*/
     .area-img img {
@@ -993,8 +1084,6 @@ label {
         margin: 20px;
     }
 
-
-
     /*---------------Rodapé---------------*/
     .rodape {
         flex-direction: column;
@@ -1017,14 +1106,12 @@ label {
         font-size: 14px;
     }
 
-
     /*---------------Contato---------------*/
     .card-membros td,
     th {
         font-size: 11px;
         padding: 2px;
         height: 30px;
-        ;
     }
 
     .card-missao p {
@@ -1032,8 +1119,6 @@ label {
         text-align: center;
         font-size: 14px;
     }
-
-
 
     /*---------------Login---------------*/
     .login-principal {
@@ -1044,8 +1129,6 @@ label {
         margin: 10px;
         padding: 10px;
     }
-
-
 
     /*--------------- Métricas ---------------*/
     .api-info {
@@ -1081,23 +1164,16 @@ label {
         flex-direction: column;
     }
 
-
-
     /*---------------Pagamento---------------*/
-    .plano{
+    .plano {
         width: 98.5%;
     }
-    .secao{
+    .secao {
         width: 98.5%;
     }
 }
 
-
-
 @media screen and (max-width: 900px) {
-
-
-
     /*---------------Navbar site---------------*/
     .ul-nav {
         position: absolute;
@@ -1142,8 +1218,6 @@ label {
         width: 100%;
         justify-content: center;
     }
-
-
 
     /*---------------Quiz---------------*/
     .todas-perguntas {
