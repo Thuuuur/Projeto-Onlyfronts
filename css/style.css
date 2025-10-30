@@ -525,9 +525,6 @@ input {
     border-radius: 10px;
     text-align: center;
 }
-.payment-card-basic h2 {
-    text-align: left;
-}
 
 .payment-card-basic ul {
     list-style: none;
@@ -537,7 +534,7 @@ input {
     padding: 10px;
 }
 .payment-card-basic li::before {
-    content: "✓";
+    content: "✓ ";
 }
 .payment-card-basic:hover {
     transform: translateY(-10px);
@@ -581,7 +578,7 @@ input {
     padding: 10px;
 }
 .payment-card-premium li::before {
-    content: "✓";
+    content: "✓   ";
 }
 .payment-card-premium:hover {
     transform: translateY(-10px);
@@ -868,24 +865,26 @@ input {
 
 /*--------------- CSS Métricas ---------------*/
 .api-info {
-    padding: 10px;
     background-color: var(--fundo-secundario);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.api-info p {
+    color: rgba(0, 0, 0, 0.452);
 }
 
 .metric-module {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 10px;
 }
 
 .api-card {
     background-color: var(--fundo-secundario);
     border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
     text-align: left;
-    flex: 22%;
-    align-content: space-between;
-    transition: all 500ms;
+    transition: all 200;
+    padding: 20px;
 }
 
 .api-button {
@@ -904,16 +903,69 @@ input {
 }
 
 .api-listing {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    gap: 10px;
 }
 
 .api-card:hover {
     background-color: rgb(161, 199, 231);
     transform: translateY(-5px);
-    transition: all 500ms;
+    transition: all 200ms;
 }
 
+.trending-tag {
+    background-color: #fed7d7;
+    color: #c53030;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.level-tag {
+    background: #e6fffa;
+    color: #047857;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.api-stats {
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.metrics-grid {
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--fundo-claro);
+    border-radius: 10px;
+}
+.metric {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.metric-value {
+    font-size: 18px;
+    font-weight: bold;
+}
+.metric-label {
+    color: var(--texto-suave);
+}
+
+.api-options {
+    justify-content: center;
+}
 /*---------------CSS Pagamento---------------*/
 .container {
     display: flex;
@@ -1133,12 +1185,12 @@ label {
     /*--------------- Métricas ---------------*/
     .api-info {
         padding: 10px;
-        background-color: var(--erro);
+        background-color: var(--cor-primaria);
+        color: var(--fundo-claro);
     }
 
     .metric-module {
-        margin-top: 5px;
-        margin-bottom: 5px;
+        width: 98.5%;
     }
 
     .api-card {
