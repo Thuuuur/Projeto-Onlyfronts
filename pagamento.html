@@ -44,30 +44,40 @@
             </ul>
         </nav>
     </header>
-    <main class="container">
+    <main class="planos">
         <h1>Nossos Planos</h1>
-        <section class="plano">
-            <h3>DevRouter Basico</h3>
-            <p class="preco">R$ 29,90 por mês</p>
-            <ul>
-                <li>Acesso a todos os cursos e trilhas</li>
-                <li>Emails de suporte</li>
-                <li>Atualizações constantes</li>
-                <li>Quizes semanais</li>
-            </ul>
-            <button type="button" class="btn-plano">Selecionar</button>
-        </section>
-
-        <section class="plano">
-            <h3>DevRouter Pro</h3>
-            <p class="preco">R$ 79,90 por trimestre</p>
-            <ul>
-                <li>DevRouter Basico</li>
-                <li>Recomendação de vagas baseado no seu perfil</li>
-                <li>Suporte de profissionais ligado ao curso/trilha de escolha</li>
-            </ul>
-            <button type="button" class="btn-plano">Selecionar</button>
-        </section>
+        <section class="payment-section">
+                <div class="payment-menu">
+                    <article class="payment-card-basic unselected" id="basic-plan">
+                        <h2>Devrouter Basic</h2>
+                        <p>Perfeito para começar</p>
+                        <p class="price-basic">R$49,90</p>
+                        <p>Pagamento único</p>
+                        <ul class="benefits">
+                            <li>Acesso a cursos individuais</li>
+                            <li>Material complementar</li>
+                            <li>Certificado de conclusão</li>
+                            <li>Suporte via email</li>
+                        </ul>
+                            <button class="btn-basic">Selecionar</button>
+                    </article>
+                    <article class="payment-card-premium unselected" id="premium-plan">
+                        <h2>Devrouter Pro</h2>
+                        <p>Acesso ilimitado a tudo</p>
+                        <p class="price-premium">R$149,90</p>
+                        <p>Por mês</p>
+                        <ul class="benefits">
+                            <li>Acesso a todos os +200 cursos</li>
+                            <li>Novos cursos toda semana</li>
+                            <li>Certificados ilimitados</li>
+                            <li>Mentoria em grupo</li>
+                            <li>Comunidade exclusiva</li>
+                            <li>Suporte prioritário 24/7</li>
+                        </ul>
+                            <button class="btn-premium">Selecionar</button>
+                    </article>
+                </div>
+            </section>
             <section class="secao">
                 <form id="form-pagamento">
                 <h3>Forma de Pagamento</h3>
@@ -189,6 +199,8 @@
         </section>
     </footer>
     <script src="js/mobile-nav.js"></script>
+    <script src="js/payment.js"></script>
+
 </body>
 
 </html>

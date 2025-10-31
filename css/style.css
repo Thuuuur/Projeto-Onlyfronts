@@ -2,7 +2,7 @@
 :root {
     --cor-primaria: #0d47a1;
     /*---------------Azul Marinho---------------*/
-    --cor-acao: #ff8c00;
+    --cor-acao: #093476;
     /*---------------Laranja Escuro---------------*/
     --fundo-claro: #f8f9fa;
     /*---------------Fundo principal---------------*/
@@ -967,18 +967,30 @@ input {
     justify-content: center;
 }
 /*---------------CSS Pagamento---------------*/
-.container {
+.planos {
+    background-color: var(--fundo-secundario);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 20px;
+    border-radius: 10px;
 }
 
-.plano {
+.plano-menu {
     margin-bottom: 20px;
-    background-color: var(--fundo-secundario);
+    background-color: var(--fundo-claro);
     border-radius: 10px;
     width: 590px;
+}
+
+.selected {
+    border-style: solid; 
+    border-color: orange
+}
+.unselected {
+    border-style: none;
+    border-color: transparent
 }
 
 .secao {
@@ -988,7 +1000,7 @@ input {
     width: 590px;
 }
 
-.plano h3 {
+.plano-menu h3 {
     margin-bottom: 10px;
     margin-top: 10px;
     margin-left: 10px;
@@ -999,17 +1011,17 @@ input {
     margin-left: 10px;
 }
 
-.plano ul {
+.plano-menu ul {
     margin: 15px 0;
     padding-left: 10px;
 }
 
-.plano li {
+.plano-menu li {
     margin-bottom: 15px;
     list-style: none;
 }
 
-.plano li::before {
+.plano-menu li::before {
     content: "✓";
 }
 
