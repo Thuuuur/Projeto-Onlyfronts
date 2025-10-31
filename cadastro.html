@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Meu perfil</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <a href="index.html">
+                <h1 class="logo">Devroute</h1>
+            </a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="ul-nav">
+                <li class="li-nav">
+                    <input type="text" placeholder="Pesquisar" />
+                </li>
+                <li class="li-nav">
+                    <a href="index.html">
+                        <h4>Home</h4>
+                    </a>
+                </li>
+                <li class="li-nav">
+                    <a href="quiz.html">
+                        <h4>Quiz</h4>
+                    </a>
+                </li>
+                <li class="li-nav">
+                    <a href="cursos-trilhas.html">
+                        <h4>Cursos / Trilhas</h4>
+                    </a>
+                </li>
+                <li class="li-nav">
+                    <a href="areas-em-alta.html">
+                        <h4>🔥 Áreas em alta!</h4>
+                    </a>
+                </li>
+                <li class="li-nav perfil-dropdown-hover">
+                    <a href="perfil.html" class="perfil-link">
+                        <h4>Perfil</h4>
+                    </a>
+                    <div class="dropdown-menu-hover">
+                        <a href="login.html">Login</a>
+                        <a href="cadastro.html">Cadastro</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-cadastro">
+        <div class="container">
+            <h1>Cadastro</h1>
+            <form action="perfil.html" class="dados-cad">
+                <label for="nome" class="dados-pessoais">Nome completo</label>
+                <input type="text" class="dados-user" placeholder="João Gulherme" id="nome" name="nome" required>
+
+                <label for="email" class="dados-pessoais">E-mail</label>
+                <input type="email" class="dados-user" placeholder="onlyfronts@gmail.com" id="email" name="email"
+                    required>
+
+                <label for="senha" class="dados-pessoais">Senha</label>
+                <input type="password" class="dados-user" placeholder="**********" id="senha" name="senha" required>
+
+                <label for="confirmar" class="dados-pessoais">Confirmar senha</label>
+                <input type="password" class="dados-user" placeholder="**********" id="confirmar" name="confirmar"
+                    required>
+
+                <button type="submit" class="botão-cad">Cadastrar</button>
+            </form>
+            <p class="login">Já tem conta? <a href="login.html">Faça login</a></p>
+            </form>
+        </div>
+    </main>
+    <footer class="rodape">
+        <section class="rodape-coluna">
+            <h1>Devroute</h1>
+            <ul class="icons-redes">
+                <li>
+                    <a href="#"><img src="img/instagram.png" alt="Logo da rede social Instagram" width="45px" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/linkedin.png" alt="Logo da rede social LinkedIn" width="45px" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/github.png" alt="Logo da rede social GitHub" width="50px" /></a>
+                </li>
+            </ul>
+            <p>
+                &copy; 2025 <strong>OnlyFronts</strong> - Todos os direitos
+                reservados.
+            </p>
+        </section>
+        <section class="rodape-coluna">
+            <h4>Sobre Nós</h4>
+            <ul>
+                <li><a href="contato.html">Quem Somos</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+                <li><a href="contato.html">Trabalhe Conosco</a></li>
+            </ul>
+        </section>
+        <section class="rodape-coluna">
+            <h4>Ajuda e Suporte</h4>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+            </ul>
+        </section>
+    </footer>
+    <script src="js/mobile-nav.js"></script>
+</body>
+
+</html>

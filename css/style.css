@@ -33,6 +33,10 @@ body {
     flex-direction: column;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /*---------------CSS navbar---------------*/
 .nav-bar {
     display: flex;
@@ -411,6 +415,7 @@ input {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 /* Feedback */
 .feedback-section {
     background-color: var(--fundo-secundario);
@@ -422,6 +427,7 @@ input {
     padding: 20px;
     margin: 10px;
 }
+
 .feedback-section h2 {
     margin-bottom: 10px;
 }
@@ -431,6 +437,7 @@ input {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .feedback-card {
     background-color: var(--fundo-claro);
     border-radius: 10px;
@@ -441,18 +448,21 @@ input {
     transition: 200ms;
     flex-wrap: wrap;
 }
+
 .feedback-card:hover {
     box-shadow: 0px 0px 10px var(--fundo-secundario);
     transform: translateY(-5px);
     background-color: var(--cor-primaria);
     color: var(--fundo-claro);
 }
+
 .feedback-card-header {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     gap: 10px;
 }
+
 .profile-pic {
     width: 30px;
     height: 30px;
@@ -479,6 +489,7 @@ input {
     flex-wrap: wrap;
     padding: 20px;
 }
+
 .impact-section li {
     font-size: 18px;
     margin: 10px;
@@ -486,6 +497,7 @@ input {
     padding: 15px;
     border-radius: 20px;
 }
+
 .impact-section li::before {
     content: "★ ";
     color: var(--cor-primaria);
@@ -500,6 +512,7 @@ input {
     justify-content: center;
     padding: 20px;
 }
+
 .payment-sections h1 {
     width: 100%;
     text-align: center;
@@ -529,22 +542,27 @@ input {
 .payment-card-basic ul {
     list-style: none;
 }
+
 .payment-card-basic li {
     border-bottom: 1px solid lightgray;
     padding: 10px;
 }
+
 .payment-card-basic li::before {
     content: "✓ ";
 }
+
 .payment-card-basic:hover {
     transform: translateY(-10px);
 }
+
 .price-basic {
     font-size: 24px;
     font-weight: bold;
     margin: 10px 0;
     color: var(--cor-primaria);
 }
+
 .btn-basic {
     margin-top: 15px;
     padding: 10px 30px;
@@ -558,11 +576,9 @@ input {
 /* Card premium */
 .payment-card-premium {
     background: #2a7b9b;
-    background: linear-gradient(
-        167deg,
-        rgba(42, 123, 155, 1) 0%,
-        rgba(152, 83, 237, 1) 100%
-    );
+    background: linear-gradient(167deg,
+            rgba(42, 123, 155, 1) 0%,
+            rgba(152, 83, 237, 1) 100%);
     background-color: var(--cor-primaria);
     color: var(--fundo-claro);
     padding: 50px;
@@ -570,24 +586,30 @@ input {
     transition: 200ms;
     text-align: center;
 }
+
 .payment-card-premium ul {
     list-style: none;
 }
+
 .payment-card-premium li {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     padding: 10px;
 }
+
 .payment-card-premium li::before {
     content: "✓   ";
 }
+
 .payment-card-premium:hover {
     transform: translateY(-10px);
 }
+
 .price-premium {
     font-size: 24px;
     font-weight: bold;
     margin: 10px 0;
 }
+
 .btn-premium {
     margin-top: 15px;
     padding: 10px 30px;
@@ -614,20 +636,34 @@ input {
     display: grid;
     justify-items: center;
     text-align: center;
+    background-color: var(--fundo-secundario);
+    margin-top: 10px;
+    width: 98.5%;
+    border-radius: 10px;
+    min-height: 70px;
 }
 
 .titulo {
-    margin: 20px;
+    color: var(--cor-primaria);
+    margin-top: 5px;
 }
 
 .subtitulo {
-    margin-bottom: 20px;
+    color: var(--texto-suave);
+    margin-bottom: 5px;
+}
+
+.subtitulo-questoes{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--cor-primaria);
 }
 
 .perguntas {
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .caixa-perguntas {
@@ -636,7 +672,7 @@ input {
     border-radius: 10px;
     flex-direction: column;
     width: 60%;
-    height: auto;
+    min-height: 300px;
     margin-bottom: 10px;
     justify-content: space-around;
 }
@@ -940,6 +976,7 @@ input {
     border-radius: 10px;
     padding: 10px;
 }
+
 .metrics-grid {
     margin: 10px;
     display: flex;
@@ -948,6 +985,7 @@ input {
     background-color: var(--fundo-claro);
     border-radius: 10px;
 }
+
 .metric {
     list-style: none;
     display: flex;
@@ -955,10 +993,12 @@ input {
     align-items: center;
     margin: 10px;
 }
+
 .metric-value {
     font-size: 18px;
     font-weight: bold;
 }
+
 .metric-label {
     color: var(--texto-suave);
 }
@@ -966,6 +1006,7 @@ input {
 .api-options {
     justify-content: center;
 }
+
 /*---------------CSS Pagamento---------------*/
 .planos {
     background-color: var(--fundo-secundario);
@@ -985,9 +1026,10 @@ input {
 }
 
 .selected {
-    border-style: solid; 
+    border-style: solid;
     border-color: orange
 }
+
 .unselected {
     border-style: none;
     border-color: transparent
@@ -1098,6 +1140,7 @@ label {
     border: 1px solid var(--fundo-secundario);
     margin-bottom: 10px;
 }
+
 .btn-enviar {
     background-color: var(--cor-primaria);
     color: var(--fundo-claro);
@@ -1109,15 +1152,324 @@ label {
     margin-top: 15px;
     border-radius: 0px 0px 10px 10px;
 }
+
 .btn-enviar:hover {
     background-color: var(--cor-acao);
 }
+
+
+
+/*---------------CSS Cursos e Trilhas---------------*/
+.main-cursos-trilhas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barra-cursos {
+    background-color: var(--fundo-secundario);
+    width: 98.5%;
+    text-align: center;
+    min-height: 80px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.barra-filtro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.barra-filtro div{
+    border: 2px solid var(--cor-primaria);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.barra-filtro div:hover{
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+.barra-filtro a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+.barra-cursos h1 {
+    color: var(--cor-primaria);
+}
+
+.barra-cursos p {
+    color: var(--texto-suave);
+}
+
+.secao-cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98.5%;
+}
+
+.secao-cursos h2 {
+    color: var(--cor-primaria);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container-cursos {
+    display: flex;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-curso {
+    background-color: var(--fundo-secundario);
+    min-height: 300px;
+    width: 98.5%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.card-curso-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.curso-numero {
+    background-color: var(--cor-primaria);
+    color: var(--fundo-claro);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.curso-vagas {
+    background-color: var(--cor-primaria);
+    color: var(--fundo-claro);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--sucesso);
+    height: 30px;
+    font-weight: bold;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card-curso h3 {
+    color: var(--cor-primaria);
+    margin-left: 20px;
+}
+
+.card-curso p {
+    margin-left: 20px;
+}
+
+.info-item span {
+    color: var(--texto-suave);
+}
+
+.card-curso button {
+    background-color: var(--cor-primaria);
+    color: var(--fundo-claro);
+    border: 0;
+    padding: 10px;
+    margin-left: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.card-curso-info {
+    margin-left: 20px;
+}
+
+.card-curso:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-color: var(--cor-primaria);
+}
+
+.trilha-card {
+    margin-top: 20px;
+    background: var(--cor-primaria);
+    width: 98.5%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 400px;
+    height: auto;
+    color: var(--fundo-claro);
+}
+
+.trilha-header {
+    text-align: center;
+    margin-top: 20px;
+    min-height: 120px;
+}
+
+.trilha-header h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.trilha-duracao {
+    background-color: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.trilha-cursos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.trilha-curso-item {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 150px;
+}
+
+.trilha-seta {
+    font-size: 24px;
+    color: white;
+    transform: rotate(90deg);
+}
+
+.trilha-footer {
+    text-align: center;
+}
+
+.btn-trilha {
+    background-color: white;
+    color: var(--cor-primaria);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+}
+
+.btn-trilha:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/*---------------CSS Cadastro---------------*/
+.main-cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+  background-color: var(--fundo-secundario);
+  padding: 40px 30px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+  margin-top: 10px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--cor-primaria);
+}
+
+.dados-cad {
+  display: flex;
+  flex-direction: column;
+}
+
+.dados-cad input{
+    width: auto;
+}
+
+.dados-pessoais {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: var(--texto-principal);
+}
+
+.dados-user {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.botão-cad {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: var(--cor-acao);
+}
+
+.login {
+  text-align: center;
+  margin-top: 15px;
+}
+
+
 
 /*---------------Responsividade do site---------------*/
 @media screen and (max-width: 600px) {
     body {
         overflow-x: hidden;
     }
+
+
 
     /*---------------index---------------*/
     .area-img img {
@@ -1148,6 +1500,8 @@ label {
         margin: 20px;
     }
 
+
+
     /*---------------Rodapé---------------*/
     .rodape {
         flex-direction: column;
@@ -1165,10 +1519,6 @@ label {
         height: auto;
     }
 
-    .card-infos p,
-    h2 {
-        font-size: 14px;
-    }
 
     /*---------------Contato---------------*/
     .card-membros td,
@@ -1184,6 +1534,8 @@ label {
         font-size: 14px;
     }
 
+
+
     /*---------------Login---------------*/
     .login-principal {
         display: grid;
@@ -1193,6 +1545,8 @@ label {
         margin: 10px;
         padding: 10px;
     }
+
+
 
     /*--------------- Métricas ---------------*/
     .api-info {
@@ -1228,16 +1582,30 @@ label {
         flex-direction: column;
     }
 
+
+
     /*---------------Pagamento---------------*/
     .plano {
         width: 98.5%;
     }
+
     .secao {
         width: 98.5%;
+    }
+
+
+
+    /*---------------Cadastro---------------*/
+    .container{
+        width: 98.5%;
+        border-radius: 10px;
     }
 }
 
 @media screen and (max-width: 900px) {
+
+
+
     /*---------------Navbar site---------------*/
     .ul-nav {
         position: absolute;
@@ -1282,6 +1650,8 @@ label {
         width: 100%;
         justify-content: center;
     }
+
+
 
     /*---------------Quiz---------------*/
     .todas-perguntas {
