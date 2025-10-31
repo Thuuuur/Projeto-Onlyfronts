@@ -33,7 +33,7 @@ body {
     flex-direction: column;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -190,6 +190,9 @@ input {
 
 #dados-form {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #dados-form input {
@@ -198,6 +201,13 @@ input {
     padding-left: 2px;
     margin-top: 5px;
     margin-bottom: 5px;
+    box-shadow: var(--texto-suave) 0px 0px 1px;
+}
+
+.form-dados{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
 #redes-sociais ul {
@@ -334,9 +344,14 @@ input {
     width: 50%;
 }
 
+.area-infos h2 {
+    color: var(--cor-primaria);
+}
+
 .area-infos p {
     margin-top: 10px;
     width: 70%;
+    color: var(--texto-suave);
 }
 
 .area-infos button {
@@ -381,7 +396,7 @@ input {
 .card-areas {
     background-color: var(--fundo-claro);
     border-radius: 10px;
-    border: 1px solid var(--texto-suave);
+    box-shadow: var(--texto-suave) 0px 0px 5px;
     height: auto;
     width: 300px;
     margin: 40px;
@@ -414,7 +429,9 @@ input {
 .card-areas h3 {
     margin-top: 10px;
     margin-bottom: 10px;
+    color: var(--cor-primaria);
 }
+
 
 /* Feedback */
 .feedback-section {
@@ -530,7 +547,6 @@ input {
 }
 
 /* Card basico */
-
 .payment-card-basic {
     background-color: var(--fundo-claro);
     transition: 200ms;
@@ -653,7 +669,7 @@ input {
     margin-bottom: 5px;
 }
 
-.subtitulo-questoes{
+.subtitulo-questoes {
     margin-top: 10px;
     margin-bottom: 10px;
     color: var(--cor-primaria);
@@ -899,7 +915,7 @@ input {
     padding: 5px;
 }
 
-/*--------------- CSS Métricas ---------------*/
+/*--------------- CSS Áreas em alta ---------------*/
 .api-info {
     background-color: var(--fundo-secundario);
     border-radius: 10px;
@@ -1157,10 +1173,8 @@ label {
     background-color: var(--cor-acao);
 }
 
-
-
 /*---------------CSS Cursos e Trilhas---------------*/
-.main-cursos-trilhas{
+.main-cursos-trilhas {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1178,26 +1192,26 @@ label {
     border-radius: 10px;
 }
 
-.barra-filtro{
+.barra-filtro {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
 
-.barra-filtro div{
+.barra-filtro div {
     border: 2px solid var(--cor-primaria);
     padding: 10px;
     border-radius: 10px;
     margin: 10px;
 }
 
-.barra-filtro div:hover{
+.barra-filtro div:hover {
     background-color: var(--cor-primaria);
     color: white;
 }
 
-.barra-filtro a{
+.barra-filtro a {
     text-decoration: none;
     font-weight: bold;
     color: var(--cor-primaria);
@@ -1394,82 +1408,76 @@ label {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-
-
 /*---------------CSS Cadastro---------------*/
-.main-cadastro{
+.main-cadastro {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .container {
-  background-color: var(--fundo-secundario);
-  padding: 40px 30px;
-  border-radius: 10px;
-  width: 350px;
-  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
-  margin-top: 10px;
+    background-color: var(--fundo-secundario);
+    padding: 40px 30px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+    margin-top: 10px;
 }
 
 .container h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: var(--cor-primaria);
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--cor-primaria);
 }
 
 .dados-cad {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
-.dados-cad input{
+.dados-cad input {
     width: auto;
 }
 
 .dados-pessoais {
-  margin-bottom: 5px;
-  font-weight: 600;
-  color: var(--texto-principal);
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--texto-principal);
 }
 
 .dados-user {
-  margin-bottom: 15px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
 }
 
 .botão-cad {
-  background-color: var(--cor-primaria);
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
-  background-color: var(--cor-acao);
+    background-color: var(--cor-acao);
 }
 
 .login {
-  text-align: center;
-  margin-top: 15px;
+    text-align: center;
+    margin-top: 15px;
 }
-
-
 
 /*---------------Responsividade do site---------------*/
 @media screen and (max-width: 600px) {
     body {
         overflow-x: hidden;
     }
-
-
 
     /*---------------index---------------*/
     .area-img img {
@@ -1500,8 +1508,6 @@ button:hover {
         margin: 20px;
     }
 
-
-
     /*---------------Rodapé---------------*/
     .rodape {
         flex-direction: column;
@@ -1519,7 +1525,6 @@ button:hover {
         height: auto;
     }
 
-
     /*---------------Contato---------------*/
     .card-membros td,
     th {
@@ -1534,8 +1539,6 @@ button:hover {
         font-size: 14px;
     }
 
-
-
     /*---------------Login---------------*/
     .login-principal {
         display: grid;
@@ -1545,8 +1548,6 @@ button:hover {
         margin: 10px;
         padding: 10px;
     }
-
-
 
     /*--------------- Métricas ---------------*/
     .api-info {
@@ -1582,8 +1583,6 @@ button:hover {
         flex-direction: column;
     }
 
-
-
     /*---------------Pagamento---------------*/
     .plano {
         width: 98.5%;
@@ -1593,10 +1592,8 @@ button:hover {
         width: 98.5%;
     }
 
-
-
     /*---------------Cadastro---------------*/
-    .container{
+    .container {
         width: 98.5%;
         border-radius: 10px;
     }
@@ -1650,8 +1647,6 @@ button:hover {
         width: 100%;
         justify-content: center;
     }
-
-
 
     /*---------------Quiz---------------*/
     .todas-perguntas {
