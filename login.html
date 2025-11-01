@@ -54,38 +54,37 @@
                 </ul>
             </nav>
     </header>
-    <main class="main-login">
-        <div class="acesso-conta">
-            <h1>Acesso à Sua Conta</h1>
-            <p>Insira suas credenciais para continuar.</p>
+    <main class="login-pagina">
+    <div class="login-container">
+        <div class="acesso-login">
+        <h1>Acesso à Sua Conta</h1>
+            <p>Insira suas credenciais para continuar:</p>
         </div>
-
-        <form action="perfil.html" method="post" class="login-principal">
-            <label for="email">Email ou Usuário:</label>
-            <input type="email" placeholder="seu@email.com" required />
-
-            <br /><br />
-
-            <label for="senha">Senha:</label>
-            <input type="password" placeholder="********" required />
-
-            <br /><br />
-            <div class="container-checkbox">
-            <label for="lembrar" class="lembrar-me">Lembrar-me</label>
-            <input type="checkbox" id="lembrar" class="checkbox">
-            </div>
-            <br /><br />
-
-            <button type="submit" class="botao-login">Entrar</button>
-        </form>
-
-        <aside class="final-login">
-            <p><a href="">Esqueceu sua senha?</a></p> 
             
-            <p>Não tem uma conta?</p>
-            
-            <p><a href="cadastro.html">Cadastre-se!</a></p>
-        </aside>
+            <form action="perfil.html" method="post" class="login-principal">
+
+                <label for="email" class="dados-pessoais">Email ou Usuário:</label>
+                <input type="email" class="caixa-dados" placeholder="seu@email.com" required />
+
+                <label for="senha" class="dados-pessoais">Senha:</label>
+                <input type="password" class="caixa-dados" placeholder="********" required />
+
+                <div class="container-checkbox">
+                    <label for="lembrar" class="lembrar-me">Lembrar-me</label>
+                    <input type="checkbox" id="lembrar" class="checkbox">
+                </div>
+
+                <button type="submit" class="botao-login">Entrar</button>
+            </form>
+
+            <aside class="final-login">
+                <p><a href="">Esqueceu sua senha?</a></p>
+
+                <p>Não tem uma conta?</p>
+
+                <p><a href="cadastro.html">Cadastre-se!</a></p>
+            </aside>
+        </div>
     </main>
         <footer class="rodape">
         <section class="rodape-coluna">

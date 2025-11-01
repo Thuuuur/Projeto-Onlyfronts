@@ -744,51 +744,43 @@ input {
 }
 
 /*---------------CSS Login---------------*/
-.login-principal {
-    background-color: var(--fundo-secundario);
-    padding: 20px;
-    width: 400px;
-    border-radius: 20px;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-}
-
-.main-login {
+.login-pagina {
     display: grid;
-    flex-direction: column;
     justify-content: center;
-    text-align: center;
+    width: 100%;
+    margin: auto;
 }
 
-.main-login a {
+.login-container {
+    place-items: center;
+    text-align: center;
+    background-color: var(--fundo-secundario);
+    padding: 40px 30px;
+    border-radius: 10px;
+    width: 350px;
+    margin-top: 10px;
+}
+
+.login-container a {
     text-decoration: none;
     color: var(--cor-primaria);
 }
 
 .botao-login {
-    height: 30px;
-    width: 120px;
-    border-radius: 20px;
-    border: 0;
     background-color: var(--cor-primaria);
     color: white;
-    font-weight: bold;
+    padding: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
+    margin-bottom: 15px;
+    margin-top: 10px;
 }
 
 .botao-login:hover {
     box-shadow: 0px 0px 5px #000000;
-}
-
-.final-login {
-    margin: 20px;
-}
-
-.acesso-conta {
-    display: grid;
-    margin: 20px;
-    gap: 15px;
 }
 
 .checkbox {
@@ -797,9 +789,44 @@ input {
 
 .container-checkbox {
     display: flex;
-    justify-content: space-between;
+    justify-self: left;
+}
+
+.dados_login {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--texto-principal);
+}
+
+.final-login {
+    display: grid;
+    gap: 5px;
+}
+
+.acesso-login {
     align-items: center;
-    gap: 3px;
+    color: var(--cor-primaria);
+    margin-bottom: 20px;
+}
+
+.acesso-login p {
+    color: var(--texto-principal);
+    margin-top: 5px;
+}
+
+.lembrar-me{
+    font-weight: 600;
+    color: var(--texto-principal);
+}
+
+.caixa-dados{
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 300px;
+    height: 50px;
 }
 
 /*---------------CSS Contato---------------*/
@@ -1688,14 +1715,19 @@ html{
 
     /*---------------Login---------------*/
     .login-principal {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        text-align: center;
         border-radius: 10px;
         margin: 10px;
         padding: 10px;
+        align-items: center;
+        width: 98.5%;
     }
 
+    .acesso-login {
+        width: 98.5%;
+    }
     /*--------------- Métricas ---------------*/
     .api-info {
         padding: 10px;
