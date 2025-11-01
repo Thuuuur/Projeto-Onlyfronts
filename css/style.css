@@ -77,7 +77,7 @@ html {
 .nav-bar input {
     border-radius: 20px;
     height: 30px;
-    width: 300px;
+    width: auto;
     padding-left: 10px;
     border: 0;
 }
@@ -829,6 +829,11 @@ input {
     flex-grow: 1;
 }
 
+.form-contato label{
+    display: flex;
+    flex-direction: column;
+}
+
 .card-form-contato form {
     display: flex;
     flex-direction: column;
@@ -837,8 +842,7 @@ input {
     margin: 20px;
 }
 
-.card-form-contato input,
-.card-form-contato textarea {
+.card-form-contato input,textarea {
     width: 300px;
     margin-bottom: 5px;
     height: 30px;
@@ -1476,6 +1480,144 @@ button:hover {
 .login {
     text-align: center;
     margin-top: 15px;
+}
+
+
+
+/*-------------CSS recomendaçao----------*/
+html{
+    scroll-padding-top: 100px; 
+    scroll-behavior: smooth;
+}
+
+.main-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo1 {
+  background-color: var(--fundo-secundario);
+  width: 98.5%;
+  text-align: center;
+  min-height: 80px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.titulo1 h1 {
+  color: var(--cor-primaria);
+}
+
+.titulo1 p {
+  color: var(--texto-suave);
+}
+
+.navegacao-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.navegacao-area a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--cor-primaria);
+}
+
+.navegacao-area div {
+  border: 2px solid var(--cor-primaria);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.navegacao-area div:hover {
+  background-color: var(--cor-primaria);
+  color: white;
+}
+
+.area {
+  min-height: 300px;
+  width: 98.5%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+  align-items: center;  
+}
+
+.container-area {
+  display: flex;
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card-area {
+  background-color: var(--fundo-secundario);
+  min-height: 300px;
+  width: 98.5%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.area-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.area-numero {
+  background-color: var(--cor-primaria);
+  color: var(--fundo-claro);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.card-area h3 {
+  color: var(--cor-primaria);
+  margin-left: 20px;
+}
+
+.card-area p {
+  margin-left: 20px;
+}
+
+.area-top{
+  padding-left: 20px; 
+  list-style-position: inside; 
+}
+
+.area-top li {
+  margin-bottom: 5px;
+}
+
+.card-area:hover {
+  transform: translateY(-1px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  border-color: var(--cor-acao);
 }
 
 /*---------------Responsividade do site---------------*/
