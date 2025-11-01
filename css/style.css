@@ -1729,12 +1729,6 @@ html{
         width: 98.5%;
     }
     /*--------------- Métricas ---------------*/
-    .api-info {
-        padding: 10px;
-        background-color: var(--cor-primaria);
-        color: var(--fundo-claro);
-    }
-
     .metric-module {
         width: 98.5%;
     }
