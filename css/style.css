@@ -37,6 +37,8 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
 /*---------------CSS navbar---------------*/
 .nav-bar {
     display: flex;
@@ -133,6 +135,8 @@ html {
 .perfil-dropdown-hover:hover .dropdown-menu-hover {
     display: block;
 }
+
+
 
 /*---------------CSS perfil---------------*/
 .main-perfil {
@@ -260,6 +264,8 @@ input {
     margin-top: 10px;
 }
 
+
+
 /*---------------CSS rodapé---------------*/
 .rodape {
     display: flex;
@@ -304,6 +310,8 @@ input {
 .icons-redes img {
     width: 25px;
 }
+
+
 
 /*---------------CSS Index---------------*/
 .descubra-area {
@@ -431,7 +439,6 @@ input {
     margin-bottom: 10px;
     color: var(--cor-primaria);
 }
-
 
 /* Feedback */
 .feedback-section {
@@ -640,6 +647,8 @@ input {
     text-align: left;
 }
 
+
+
 /*---------------CSS Quiz---------------*/
 .main-quiz {
     display: flex;
@@ -743,6 +752,8 @@ input {
     margin-right: 10px;
 }
 
+
+
 /*---------------CSS Login---------------*/
 .login-pagina {
     display: grid;
@@ -828,6 +839,8 @@ input {
     width: 300px;
     height: 50px;
 }
+
+
 
 /*---------------CSS Contato---------------*/
 .main-contato {
@@ -946,6 +959,8 @@ input {
     padding: 5px;
 }
 
+
+
 /*--------------- CSS Áreas em alta ---------------*/
 .api-info {
     background-color: var(--fundo-secundario);
@@ -1053,6 +1068,8 @@ input {
 .api-options {
     justify-content: center;
 }
+
+
 
 /*---------------CSS Pagamento---------------*/
 .planos {
@@ -1208,6 +1225,8 @@ label {
 .btn-enviar:hover {
     background-color: var(--cor-acao);
 }
+
+
 
 /*---------------CSS Cursos e Trilhas---------------*/
 .main-cursos-trilhas {
@@ -1444,6 +1463,8 @@ label {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+
+
 /*---------------CSS Cadastro---------------*/
 .main-cadastro {
     display: flex;
@@ -1509,6 +1530,10 @@ button:hover {
     margin-top: 15px;
 }
 
+.login a{
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
 
 
 /*-------------CSS recomendaçao----------*/
@@ -1647,8 +1672,11 @@ html{
   border-color: var(--cor-acao);
 }
 
+
+
 /*---------------Responsividade do site---------------*/
 @media screen and (max-width: 600px) {
+
     body {
         overflow-x: hidden;
     }
@@ -1728,7 +1756,8 @@ html{
     .acesso-login {
         width: 98.5%;
     }
-    /*--------------- Métricas ---------------*/
+
+    /*--------------- Áreas em alta ---------------*/
     .metric-module {
         width: 98.5%;
     }
@@ -1773,9 +1802,6 @@ html{
 }
 
 @media screen and (max-width: 900px) {
-
-
-
     /*---------------Navbar site---------------*/
     .ul-nav {
         position: absolute;
